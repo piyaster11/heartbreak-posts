@@ -1,0 +1,885 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%92%94%3C/text%3E%3C/svg%3E">
+<title>Heartbreak Posts · ไอเดียโพสต์อกหัก (MOCKUP)</title>
+<style>:root{--bg:#fdf6f9;--card:#fff;--ink:#1f2937;--mut:#6b7280;--line:#e5e7eb;--brand:#db2777;--fb:#1877F2;--ig1:#f472b6;--ig2:#ec4899;--ig3:#be185d;--tt:#000;--ttc:#25F4EE;--ttr:#FE2C55;--warn:#b45309}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Noto Sans Thai","Noto Sans",system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.5}
+.wrap{max-width:1240px;margin:0 auto;padding:0 16px}
+.th{color:var(--mut);font-weight:500}
+h1 .th{display:block;font-size:.62em;color:#fce7f3}
+.top{background:linear-gradient(135deg,#be185d,#831843 60%,#1f1023);color:#fff;padding:18px 0 10px;position:sticky;top:0;z-index:20;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.top .sub{margin:4px 0 0;font-size:13px;color:#fce7f3}.top .sub .th{color:#fbcfe8}
+.ttl{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}
+h1{margin:0;font-size:26px;line-height:1.2}
+.badges{display:flex;gap:6px;flex-wrap:wrap}
+.bdg{display:inline-block;font-size:11px;font-weight:700;padding:3px 8px;border-radius:99px;vertical-align:middle;letter-spacing:.02em}
+.bdg.mock{background:#fde68a;color:#78350f}.bdg.own{background:rgba(255,255,255,.18);color:#fff}
+.bdg.plan{background:#e0e7ff;color:#3730a3}.bdg.ex{background:#fee2e2;color:#991b1b}.bdg.real{background:#dcfce7;color:#166534}
+.nav{display:flex;gap:6px;overflow-x:auto;margin-top:10px;padding-bottom:4px;scrollbar-width:none}
+.nav a{white-space:nowrap;color:#fff;text-decoration:none;font-size:12.5px;background:rgba(255,255,255,.12);padding:4px 10px;border-radius:99px}
+.nav a:hover{background:rgba(255,255,255,.28)}
+.legend{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;font-size:11.5px}
+.lg-flag{padding:2px 8px;border-radius:99px;background:#fff7ed;color:var(--warn);font-weight:600}
+.lg-flag.jay{background:#fef9c3;color:#854d0e}
+section{padding:26px 0 6px;scroll-margin-top:150px}
+h2{font-size:21px;margin:0 0 10px}h2 .th{font-size:.72em;margin-left:4px}
+h3{font-size:14px;margin:0 0 8px}
+.note{font-size:12.5px;color:var(--mut);margin:4px 0 10px}
+.cnt{font-size:13px;color:var(--mut);font-weight:500}
+/* platform pills */
+.pl{display:inline-block;font-size:11px;font-weight:700;color:#fff;padding:2px 8px;border-radius:99px;margin-right:3px}
+.pl.fb{background:var(--fb)}.pl.ig{background:linear-gradient(45deg,var(--ig1),var(--ig2),var(--ig3))}
+.pl.tt{background:var(--tt);box-shadow:-2px 0 0 var(--ttc),2px 0 0 var(--ttc)}
+.pil{display:inline-block;font-size:11px;font-weight:600;padding:2px 8px;border-radius:99px;border:1px solid currentColor}
+.flag{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;background:#fff7ed;color:var(--warn);border:1px solid #fed7aa}
+.flag.jay{background:#fef9c3;color:#854d0e;border-color:#fde047}
+/* easy */
+.easy{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:14px}
+.ecard{background:var(--card);border-radius:16px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.08);border-top:6px solid var(--brand);position:relative}
+.ecard.fb{border-top-color:var(--fb)}.ecard.ig{border-image:linear-gradient(90deg,var(--ig1),var(--ig2),var(--ig3)) 1;border-top-width:6px}.ecard.tt{border-top-color:#000;box-shadow:0 -2px 0 var(--ttc),0 1px 3px rgba(0,0,0,.08)}
+.ecard .num{position:absolute;right:14px;top:10px;font-size:40px;font-weight:800;color:#e5e7eb}
+.ecard .day{font-size:12px;color:var(--mut);font-weight:600}
+.ecard .hook{font-size:18px;font-weight:700;margin:6px 0 2px;line-height:1.35}
+.ecard .hook-en{font-size:13px;color:var(--mut);margin-bottom:8px}
+.ecard ol{margin:8px 0 8px 18px;padding:0;font-size:13px}
+.ecard .tm{font-size:12px;background:#fdf2f8;color:#9d174d;padding:4px 8px;border-radius:8px;display:inline-block}
+/* calendar */
+.season{background:linear-gradient(90deg,#dbeafe,#e0f2fe 45%,#fce7f3);border-radius:12px;padding:8px 12px;font-size:13px;margin-bottom:10px}
+.calwrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.calendar{display:grid;grid-template-columns:70px repeat(7,minmax(118px,1fr));gap:4px;min-width:900px}
+.calendar .hd{font-size:12px;font-weight:700;text-align:center;color:var(--mut);padding:4px}
+.calendar .wk{font-size:11.5px;font-weight:700;color:var(--brand);padding:6px 4px;writing-mode:horizontal-tb}
+.cell{background:#fff;border-radius:10px;min-height:118px;padding:6px;font-size:11.5px;border:1px solid var(--line);position:relative}
+.cell .dn{font-weight:800;font-size:13px}.cell .dn small{font-weight:500;color:var(--mut)}
+.cell.jay{background:linear-gradient(#fef9c3,#fffbe6)}.cell.respect{background:#f3f4f6}
+.cell.today{outline:2px solid var(--brand)}
+.ev{display:block;margin:3px 0;padding:2px 5px;border-radius:6px;font-weight:600;line-height:1.25}
+.ev.jay{background:#fde047;color:#713f12}.ev.respect{background:#d1d5db;color:#111827}.ev.day{background:#ede9fe;color:#5b21b6}
+.ev.pay{background:#dcfce7;color:#166534}.ev.sale{background:#ffe4e6;color:#9f1239}
+.post{display:block;margin:3px 0;padding:3px 5px;border-radius:6px;color:#fff;text-decoration:none;line-height:1.25;font-weight:600}
+.post.fb{background:var(--fb)}.post.ig{background:linear-gradient(45deg,var(--ig1),var(--ig2),var(--ig3))}.post.tt{background:#000;border-left:3px solid var(--ttc);color:#e0fffe}
+.post .pd{font-size:10px;opacity:.9;font-weight:500}
+.nopost{color:#6b7280;font-style:italic;font-size:11px;display:block;margin-top:3px}
+.outside{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:8px;margin-top:10px}
+.outside div{background:#fff;border:1px dashed #cbd5e1;border-radius:10px;padding:8px 10px;font-size:12.5px}
+/* idea board */
+.filters{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
+.fg{display:flex;gap:6px;flex-wrap:wrap}
+.fb-btn{border:1px solid var(--line);background:#fff;color:var(--ink);font-weight:500;border-radius:99px;padding:5px 12px;font-size:12.5px;cursor:pointer;font-family:inherit}
+.fb-btn.on,.fb-btn.on:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.card{background:var(--card);border-radius:14px;padding:14px;box-shadow:0 1px 3px rgba(0,0,0,.07);display:flex;flex-direction:column;gap:6px;border-left:5px solid #ccc}
+.card .row{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.card .dt{font-size:12px;color:var(--mut);font-weight:600;margin-left:auto}
+.card .h{font-weight:700;font-size:16px;line-height:1.35}
+.card .he{font-size:12.5px;color:var(--mut);margin-top:-4px}
+.cap{background:#f9fafb;border-radius:10px;padding:8px;font-size:13px}
+.cap .en{color:var(--mut);font-size:12.5px;margin-top:4px}
+.kv{font-size:12.5px}.kv b{color:#374151}
+.tags{font-size:12px;color:#2563eb;word-break:break-word}
+.copy{align-self:flex-start;border:1px solid var(--line);background:#fff;color:var(--ink);font-weight:500;border-radius:8px;padding:3px 10px;font-size:12px;cursor:pointer;font-family:inherit}
+.card.hl{animation:hl 1.6s}
+@keyframes hl{0%{box-shadow:0 0 0 4px #fde047}100%{box-shadow:0 1px 3px rgba(0,0,0,.07)}}
+/* panels/charts */
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:12px}
+.panel{background:#fff;border-radius:14px;padding:14px;box-shadow:0 1px 3px rgba(0,0,0,.07);position:relative;overflow:hidden}
+.chart svg{width:100%;height:auto;display:block}
+.panel.exm::after{content:"EXAMPLE · ตัวอย่าง";position:absolute;right:-34px;top:16px;transform:rotate(35deg);background:#fee2e2;color:#991b1b;font-size:10px;font-weight:800;padding:2px 40px}
+.dleg{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:12px;margin-top:6px}
+.dleg i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:4px;vertical-align:-1px}
+/* trends */
+.tgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.tcard{background:#111;color:#fff;border-radius:14px;padding:12px;position:relative;overflow:hidden}
+.tcard::before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:linear-gradient(var(--ttc),var(--ttr))}
+.tcard b{font-size:15px}.tcard .th{color:#9ca3af;font-size:13px;display:block}
+.tcard p{font-size:12.5px;color:#e5e7eb;margin:6px 0 4px}
+.tcard .eff{font-size:11px;color:var(--ttc)}
+/* competitor */
+.tblwrap{overflow-x:auto;background:#fff;border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,.07)}
+table.comp{border-collapse:collapse;width:100%;min-width:1100px;font-size:12.5px}
+.comp th{background:#f3f4f6;text-align:left;padding:8px;font-size:12px;position:sticky;top:0}
+.comp th small{display:block;color:var(--mut);font-weight:500}
+.comp td{border-top:1px solid var(--line);padding:6px 8px;min-width:90px;vertical-align:top}
+.comp td[contenteditable]{background:#fffef5;cursor:text}
+.comp td[contenteditable]:empty::before{content:"fill · กรอก";color:#cbd5e1}
+.comp td.brand{font-weight:700;white-space:nowrap}.comp td.brand small{display:block;font-weight:500;color:var(--mut)}
+.btns{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+button,.btn{font-family:inherit;background:var(--brand);color:#fff;border:0;border-radius:8px;padding:7px 12px;font-size:13px;cursor:pointer;font-weight:600}
+button.ghost{background:#fff;color:var(--brand);border:1px solid var(--brand)}
+/* perf */
+.upl{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;background:#fff;border-radius:12px;padding:12px;box-shadow:0 1px 3px rgba(0,0,0,.07)}
+.upl .btns{margin:0;align-items:center}
+.drop{border:2px dashed #cbd5e1;border-radius:12px;padding:10px;text-align:center;color:var(--mut);font-size:12.5px;margin:8px 0 12px}
+.drop.over{background:#fdf2f8;border-color:var(--brand)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:12px}
+.kpi{background:#fff;border-radius:12px;padding:12px;box-shadow:0 1px 3px rgba(0,0,0,.07);position:relative}
+.kpi .v{font-size:24px;font-weight:800}.kpi .l{font-size:12px;color:var(--mut)}
+.kpi .x{position:absolute;right:8px;top:8px;font-size:9.5px;font-weight:800;color:#991b1b;background:#fee2e2;border-radius:4px;padding:1px 5px}
+table.top5{width:100%;border-collapse:collapse;font-size:12.5px}
+.top5 td,.top5 th{padding:5px;border-bottom:1px solid var(--line);text-align:left}.top5 td.n{text-align:right}
+/* viz */
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
+.vcard{background:#fff;border-radius:14px;padding:12px;box-shadow:0 1px 3px rgba(0,0,0,.07)}
+.vcard svg{width:100%;height:90px;display:block;margin-bottom:6px;background:#f8fafc;border-radius:8px}
+.vcard b{font-size:13.5px;display:block}.vcard .th{font-size:12.5px;display:block}
+.src{font-size:13px;padding-left:18px}.src a{color:#2563eb;word-break:break-all}
+.build{font-size:11px;color:#9ca3af}
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:#111;color:#fff;padding:8px 14px;border-radius:10px;font-size:13px;opacity:0;transition:.3s;pointer-events:none;z-index:50;max-width:90vw}
+.toast.on{opacity:1}
+/* idea box */
+.ask{padding-top:18px}
+.ask h2{margin-bottom:8px}
+.askbox{display:flex;gap:8px;flex-wrap:wrap;background:#fff;border-radius:16px;padding:10px;box-shadow:0 2px 10px rgba(219,39,119,.15);border:2px solid #fbcfe8}
+.askbox input{flex:1 1 320px;min-width:0;font:inherit;font-size:17px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;outline:none}
+.askbox input:focus{border-color:var(--brand);box-shadow:0 0 0 3px #fce7f3}
+.askbtns{display:flex;gap:6px;flex-wrap:wrap}
+.askbtns button{padding:10px 14px;font-size:14px}
+button:disabled{opacity:.45;cursor:default}
+.exchips{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:8px 0 4px}
+.exchip{background:#fdf2f8;color:#9d174d;border:1px solid #fbcfe8;border-radius:99px;padding:4px 10px;font-size:12.5px;font-weight:500}
+.qstatus{font-size:14px;margin:6px 0}
+.qstatus .seem{font-size:12.5px;color:#be185d;margin-left:6px}
+.und{margin-top:4px;font-size:12px}
+.chip{display:inline-block;background:#e0f2fe;color:#075985;border-radius:99px;padding:1px 8px;margin:2px 3px 0 0;font-weight:600}
+.chip.raw{background:#f3f4f6;color:#374151}.chip.hw{background:#fff7ed;color:var(--warn)}
+.warnbox{background:#fff7ed;border:1px solid #fed7aa;color:#7c2d12;border-radius:10px;padding:8px 10px;font-size:13px;margin:6px 0}
+.warnbox .th{color:#9a3412}.warnbox.jay{background:#fef9c3;border-color:#fde047;color:#713f12}
+.genhead{margin:10px 0 8px;font-size:15px}
+.savedbar{margin-top:10px;font-size:13px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.savedbar a{color:#be185d}
+mark{background:#fde68a;color:inherit;border-radius:3px;padding:0 1px}
+.card.new{border-left-width:5px;background:linear-gradient(#fffbeb,#fff 90px)}
+.newtag{font-size:11.5px;font-weight:800;color:#b45309;letter-spacing:.02em}
+.newtag span{font-weight:500;color:var(--mut)}
+.copy.save{background:var(--brand);color:#fff;border-color:var(--brand)}
+.copy.saved{background:#dcfce7;color:#166534;border-color:#86efac}
+.copy.del{color:#b91c1c;border-color:#fecaca}
+.flag.resp{background:#f3f4f6;color:#374151;border-color:#d1d5db}
+.post.match,.tcard.match,.ecard.match{outline:3px solid #facc15;outline-offset:1px}
+.post.dim,.tcard.dim,.ecard.dim{opacity:.28}
+@media (max-width:640px){.askbtns{width:100%}.askbtns button{flex:1 1 auto}.askbox input{flex-basis:100%;font-size:16px}
+h1{font-size:20px}.top{position:static}section{scroll-margin-top:10px}.two{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
+@media print{.top{position:static}.nav,.btns,.drop,.upl .btns{display:none}}
+
+.panel.exm h3{padding-right:70px}
+.panel.wide{grid-column:1/-1}
+
+/* heartbreak additions */
+.lg-flag.resp{background:#f3f4f6;color:#374151}.lg-flag.priv{background:#ede9fe;color:#5b21b6}
+.flag.priv{background:#ede9fe;color:#5b21b6;border-color:#c4b5fd}.flag.care{background:#fdf2f8;color:#9d174d;border-color:#fbcfe8}
+.ev.fun{background:#fed7aa;color:#7c2d12}.ev.prep{background:#fef3c7;color:#92400e}
+.cell.prep{background:linear-gradient(#fffbeb,#fff)}
+.card.ig{border-left-color:#ec4899}.card.tt{border-left-color:#000;box-shadow:-3px 0 0 var(--ttc),0 1px 3px rgba(0,0,0,.07)}
+.ideasec{margin-top:16px}
+.carebox{background:#fdf2f8;border:1px solid #fbcfe8;color:#831843;border-radius:10px;padding:10px 12px;font-size:14px;margin:6px 0}
+.carebox b{font-size:16px}
+.dxctl{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end;background:#fff;border-radius:12px;padding:10px 12px;box-shadow:0 1px 3px rgba(0,0,0,.07)}
+.dxctl label{font-size:12.5px;color:var(--mut);display:flex;flex-direction:column;gap:3px}
+.dxctl input,.dxctl select{font:inherit;font-size:14px;padding:6px 8px;border:1px solid var(--line);border-radius:8px;color:var(--ink)}
+.dxprog{margin:10px 0;font-size:13px}.dxprog .bar{height:8px;background:#fce7f3;border-radius:99px;overflow:hidden;margin-top:4px}.dxprog .bar i{display:block;height:100%;background:linear-gradient(90deg,#ec4899,#25F4EE)}
+.dxgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:8px}
+.dx{background:#fff;border-radius:12px;padding:9px 10px;box-shadow:0 1px 3px rgba(0,0,0,.07);display:flex;gap:8px;align-items:flex-start;border-left:4px solid #ec4899}
+.dx.tt{border-left-color:#000;box-shadow:-3px 0 0 var(--ttc),0 1px 3px rgba(0,0,0,.07)}
+.dx.done{opacity:.55}.dx.done .dh{text-decoration:line-through}
+.dx input{margin-top:4px;width:18px;height:18px;accent-color:#db2777;flex:none}
+.dx .dn{font-weight:800;font-size:13px}.dx .dd{font-size:11.5px;color:var(--mut)}.dx .dh{font-size:13.5px;font-weight:600;line-height:1.35}.dx .de{font-size:12px;color:var(--mut)}
+.dx .evn{font-size:11px;font-weight:700;color:#92400e}
+.dx .copy{margin-top:4px;padding:1px 8px;font-size:11.5px}
+.qgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px}
+.qc{background:#fff;border-radius:12px;padding:10px 12px;box-shadow:0 1px 3px rgba(0,0,0,.07);display:flex;flex-direction:column;gap:4px;position:relative}
+.qc .n{position:absolute;right:10px;top:6px;font-size:11px;color:#f9a8d4;font-weight:800}
+.qc .t{font-size:16px;font-weight:700;line-height:1.4;padding-right:18px}.qc .e{font-size:12.5px;color:var(--mut)}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="ttl">
+      <div>
+        <h1>Heartbreak Posts 💔 <span class="th">อกหักแต่ปังมาก · IG + TikTok</span></h1>
+        <p class="sub">Breakup content that slays · healing era starts now · 12 Oct – 8 Nov 2026<br><span class="th">อกหักก็ต้องปัง ไอเดียโพสต์ฉบับตัวแม่ · 12 ต.ค. – 8 พ.ย. 2569</span></p>
+      </div>
+      <div class="badges"><span class="bdg mock">MOCKUP · แค่ไอเดียนะแก</span><span class="bdg own">Bot: 9.Heartbreak Posts</span></div>
+    </div>
+    <nav class="nav">
+      <a href="#tonight">🌙 Tonight · คืนนี้เอาไง</a><a href="#cal">Calendar · ปฏิทินปัง</a><a href="#ideas">Idea board · คลังไอเดีย</a>
+      <a href="#dayx">Day X · มูฟออน era</a><a href="#quotes">คำคม · Hooks โดนๆ</a><a href="#perf">Tracker · ปังแค่ไหน</a><a href="#viz">Chart ideas · กราฟในฝัน</a>
+    </nav>
+    <div class="legend"><span class="pl ig">Instagram</span><span class="pl tt">TikTok</span>
+      <span class="lg-flag resp">🙏 Calm tone · โทนสงบ</span><span class="lg-flag priv">🔒 Blur names/faces · เบลอชื่อ/หน้า</span></div>
+  </div>
+</header>
+<main class="wrap">
+
+<section id="tonight">
+  <h2>🌙 Tonight's 3 lazy-girl posts <span class="th">3 โพสต์ง่ายๆ คืนนี้ · มือถือเครื่องเดียว ~20 นาที จบ</span></h2>
+  <p class="note">No studio, no fancy editing app. Pick one, or do all three if you're feeling unhinged. · ไม่ต้องมีสตูดิโอ เลือกทำอันเดียวก็ได้ ขยันก็ทำครบสามเลยแม่</p>
+  <div id="easyCards" class="easy"></div>
+</section>
+
+<section id="cal">
+  <h2>4-week glow-up calendar <span class="th">ปฏิทินโพสต์ 4 สัปดาห์ · 12 ต.ค. – 8 พ.ย. ตามนี้ไม่มีพลาด</span></h2>
+  <div class="season" id="season"></div>
+  <div class="calwrap"><div id="calendar" class="calendar"></div></div>
+  <div class="outside" id="outside"></div>
+</section>
+
+<section id="ideas">
+  <h2>Idea board <span class="th">คลังไอเดีย หยิบไปใช้ได้เลย</span> <span class="cnt" id="ideaCount"></span></h2>
+  <div class="askbox">
+    <input id="q" type="search" enterkeyhint="go" autocomplete="off" aria-label="Mood or theme"
+      placeholder="What's the mood rn? e.g. คิดถึง ฝน · ฮาโลวีน · cafe · พิมพ์ฟีลตอนนี้มาเลย">
+    <div class="askbtns">
+      <button id="qGen">✨ Gimme ideas · ขอไอเดียหน่อย</button>
+      <button id="qShuffle" class="ghost" disabled>🔀 Shuffle · สุ่มใหม่ดิ</button>
+      <button id="qClear" class="ghost">✕ Clear · ล้างหมด</button>
+    </div>
+  </div>
+  <div id="qChips" class="exchips"></div>
+  <div id="qStatus" class="qstatus"></div>
+  <div id="qNotice"></div>
+  <div id="genHead" class="genhead" style="display:none"></div>
+  <div id="genGrid" class="grid"></div>
+  <div id="savedBar" class="savedbar"></div>
+  <div class="filters">
+    <div class="fg" id="fPlat"></div>
+    <div class="fg" id="fPill"></div>
+  </div>
+  <div id="ideaGrid" class="grid"></div>
+</section>
+
+<section id="dayx">
+  <h2>"Day X of moving on" planner <span class="th">ซีรีส์มูฟออน · healing era แบบนับวัน</span></h2>
+  <p class="note">Same spot, same angle, one short clip a day. The before/after at the end? Chef's kiss. Tick each day once it's up (saved in this browser). · มุมเดิมทุกวัน คลิปสั้นวันละอัน ตอนจบเทียบก่อน/หลังคือปังมาก ลงแล้วติ๊กเลย (บันทึกในเบราว์เซอร์นี้)</p>
+  <div class="dxctl">
+    <label>Day 1 · วันแรก <input type="date" id="dxStart" value="2026-10-12"></label>
+    <label>Length · ความยาว <select id="dxLen"><option value="7">7 days</option><option value="14">14 days</option><option value="30" selected>30 days</option></select></label>
+    <label>Platform · แพลตฟอร์ม <select id="dxPlat"><option value="alt">TikTok + IG Story (alternate)</option><option value="TT">TikTok only</option><option value="IG">IG only</option></select></label>
+    <button id="dxCsv" class="ghost">⬇ Export CSV</button><button id="dxReset" class="ghost">Reset ticks · เริ่มนับใหม่</button>
+  </div>
+  <div id="dxProg" class="dxprog"></div>
+  <div id="dxGrid" class="dxgrid"></div>
+</section>
+
+<section id="quotes">
+  <h2>Hook & คำคม bank <span class="th">คลังคำคมโดนๆ 30 ประโยค</span> <span class="bdg plan">100% original, no song lyrics · เขียนเอง ไม่ก๊อปเนื้อเพลง</span></h2>
+  <p class="note">Slap it on screen, open with it, or make it an IG quote slide. Tap Copy and go. · แปะบนคลิป ใช้เปิดเรื่อง หรือทำสไลด์คำคม กด Copy แล้วไปเลยแม่</p>
+  <div id="quoteGrid" class="qgrid"></div>
+</section>
+
+<section id="perf">
+  <h2>Results tracker <span class="th">เช็กว่าปังแค่ไหน</span> <span id="dataBadge" class="bdg ex">EXAMPLE data · ข้อมูลตัวอย่าง</span></h2>
+  <div class="upl">
+    <div>
+      <b>Drop your real stats here (CSV or Excel)</b> · <span class="th">อัปโหลดไฟล์ยอดจริง (CSV หรือ Excel)</span><br>
+      <span class="note">Every number below is EXAMPLE (made up, not real, don't flex it) until you upload yours. 1 row = 1 post. Your file never leaves your device. · ตัวเลขทั้งหมดเป็นตัวอย่าง ยังไม่ใช่ของจริงจนกว่าจะอัปโหลด ไฟล์ไม่ออกจากเครื่องแน่นอน</span>
+    </div>
+    <div class="btns">
+      <label class="btn">⬆ Upload<input type="file" id="file" accept=".csv,.xlsx,.xls,.txt" hidden></label>
+      <button id="dlTplX" class="ghost">⬇ Template .xlsx</button><button id="dlTplC" class="ghost">⬇ Template .csv</button>
+      <button id="resetEx" class="ghost">Show EXAMPLE · ดูตัวอย่าง</button>
+    </div>
+  </div>
+  <div id="drop" class="drop">Drop a file here · ลากไฟล์มาวางตรงนี้เลย</div>
+  <div id="kpis" class="kpis"></div>
+  <div class="two">
+    <div class="panel"><h3>Views by platform · วิวมาจากไหน</h3><div id="pViews" class="chart"></div></div>
+    <div class="panel"><h3>New followers over time · ฟอลใหม่สะสม</h3><div id="pFol" class="chart"></div></div>
+    <div class="panel"><h3>Saves + shares per 1,000 reach, by pillar · หมวดไหนคนเซฟ+แชร์เยอะสุด</h3><div id="pPill" class="chart"></div></div>
+    <div class="panel"><h3>"Day X" series: views per episode · ซีรีส์มูฟออนตอนไหนปัง</h3><div id="pDay" class="chart"></div></div>
+    <div class="panel wide"><h3>Top 5 posts by saves + shares · 5 โพสต์ตัวแม่</h3><div id="pTop"></div></div>
+  </div>
+</section>
+
+<section id="viz">
+  <h2>Chart ideas for later <span class="th">กราฟที่อยากได้ในอนาคต</span> <span class="bdg plan">Sketches, no data · ภาพร่าง ยังไม่มีข้อมูล</span></h2>
+  <div id="vizGrid" class="vgrid"></div>
+</section>
+
+<section id="src">
+  <h2>Dates, care & sources <span class="th">วันสำคัญ ดูแลใจ และที่มา</span></h2>
+  <ul id="srcList" class="src"></ul>
+  <p class="note">House rules: no fake flexing (tracker = EXAMPLE until you upload); never show the ex's name, face or chats unblurred, we're classy; calm tone on 13 & 23 Oct and at temples; every hook and quote is original, zero copied lyrics. If it ever feels like too much, call 1323 (Thailand mental-health hotline, free, 24 h). Asking for help is main character behaviour.<br>
+  <span class="th">กติกาบ้านเรา: ไม่มีตัวเลขปลอม (เป็นตัวอย่างจนกว่าจะอัปโหลด) ไม่โชว์ชื่อ/หน้า/แชตแฟนเก่าแบบไม่เบลอ เราสายผู้ดี โทนสงบวันที่ 13 และ 23 ต.ค. และที่วัด คำคมทุกอันเขียนเอง ไม่ก๊อปเนื้อเพลง ถ้าไม่ไหวจริงๆ โทร 1323 สายด่วนสุขภาพจิต ฟรี 24 ชม. ขอความช่วยเหลือคือความเท่นะแก</span></p>
+  <p class="build" id="build"></p>
+</section>
+</main>
+<div id="toast" class="toast"></div>
+<script>window.HB_TPL_CSV="date,platform,format,pillar,series_day,post_link,views,reach,likes,comments,shares,saves,followers_gained,notes\n";window.HB_TPL_XLSX_B64="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";window.HB_EXAMPLE_CSV="date,platform,format,pillar,series_day,post_link,views,reach,likes,comments,shares,saves,followers_gained,notes\n2026-09-08,TikTok,Video,Relatable af,,,3916,2562,123,7,24,15,10,EXAMPLE data - not real\n2026-09-09,IG,Carousel,Healing era,,,,523,30,8,7,10,0,EXAMPLE data - not real\n2026-09-11,TikTok,Video,Healing era,,,2706,1515,67,5,5,19,10,EXAMPLE data - not real\n2026-09-12,IG,Reel,Quotes,,,812,690,45,8,10,24,3,EXAMPLE data - not real\n2026-09-13,TikTok,Video,Quotes,,,3376,2600,101,24,7,65,11,EXAMPLE data - not real\n2026-09-14,IG,Photo,Glow-up,,,,597,33,3,5,16,2,EXAMPLE data - not real\n2026-09-16,TikTok,Video,Quotes,,,6018,4455,288,57,64,146,30,EXAMPLE data - not real\n2026-09-17,IG,Photo,Bestie squad,,,,612,39,8,13,15,1,EXAMPLE data - not real\n2026-09-18,TikTok,Video,Healing era,,,4521,2846,155,16,21,66,10,EXAMPLE data - not real\n2026-09-19,IG,Reel,Storytime,2,,2394,1811,66,10,14,41,14,EXAMPLE data - not real\n2026-09-21,TikTok,Video,Storytime,3,,4102,3360,211,11,63,32,9,EXAMPLE data - not real\n2026-09-22,IG,Photo,Quotes,,,,1328,103,22,21,54,7,EXAMPLE data - not real\n2026-09-23,TikTok,Video,Bestie squad,,,4615,3252,114,23,7,21,8,EXAMPLE data - not real\n2026-09-24,IG,Reel,Glow-up,,,1174,756,42,12,9,5,1,EXAMPLE data - not real\n2026-09-25,TikTok,Video,Bestie squad,,,4466,3210,116,30,40,53,14,EXAMPLE data - not real\n2026-09-26,IG,Carousel,Healing era,,,,1689,91,20,18,17,12,EXAMPLE data - not real\n2026-09-27,TikTok,Video,Bestie squad,,,3054,2006,158,42,40,23,7,EXAMPLE data - not real\n2026-09-28,IG,Story,Storytime,6,,,2490,137,28,32,61,15,EXAMPLE data - not real\n2026-09-29,TikTok,Video,Relatable af,,,7593,5015,239,13,13,60,14,EXAMPLE data - not real\n2026-10-01,IG,Story,Relatable af,,,,3057,145,42,10,23,13,EXAMPLE data - not real\n2026-10-02,TikTok,Video,Relatable af,,,18345,10351,558,118,161,73,58,EXAMPLE data - not real\n2026-10-03,IG,Carousel,Relatable af,,,,2392,147,10,49,55,10,EXAMPLE data - not real\n2026-10-05,TikTok,Video,Storytime,7,,6002,3817,203,43,47,75,16,EXAMPLE data - not real\n2026-10-06,IG,Carousel,Quotes,,,,780,54,12,4,37,1,EXAMPLE data - not real\n2026-10-07,TikTok,Video,Healing era,,,4656,3603,213,24,37,29,26,EXAMPLE data - not real\n2026-10-08,IG,Photo,Bestie squad,,,,2306,117,32,23,42,10,EXAMPLE data - not real\n2026-10-09,TikTok,Video,Storytime,10,,6757,3885,150,25,40,73,12,EXAMPLE data - not real\n2026-10-11,IG,Photo,Healing era,,,,896,35,2,2,14,1,EXAMPLE data - not real\n2026-10-12,TikTok,Video,Glow-up,,,7461,4942,319,52,66,83,37,EXAMPLE data - not real\n2026-10-14,IG,Story,Quotes,,,,1189,62,9,10,30,6,EXAMPLE data - not real\n";window.HB_BUILD="Build 2026-10-09 20:45 ICT · MOCKUP by 9.Heartbreak Posts · charts: local SVG · Excel reader: SheetJS CE (Apache-2.0)";</script>
+
+<script>/* Heartbreak Posts content (MOCKUP), Gen Z edition. All captions, hooks and quotes are original text written for this board (no song lyrics). */
+var HB={};
+HB.PLAT={IG:{en:"Instagram",cls:"ig"},TT:{en:"TikTok",cls:"tt"}};
+HB.PILLAR={
+ heal:{en:"Healing era",th:"ฮีลใจ",c:"#db2777"},
+ story:{en:"Storytime",th:"เม้าท์มอยเรื่องตัวเอง",c:"#7c3aed"},
+ glow:{en:"Glow-up",th:"ลุคปังหลังเลิก",c:"#d97706"},
+ fun:{en:"Relatable af",th:"ขำแต่เจ็บ",c:"#0891b2"},
+ quote:{en:"Quotes",th:"คำคมโดนๆ",c:"#be123c"},
+ friends:{en:"Bestie squad",th:"แก๊งเพื่อนซี้",c:"#059669"}
+};
+/* tonight's 3 easy posts (any night, phone only, ~20 min each) */
+HB.EASY=[
+ {p:"TT",f:"Video 15s",hTH:"อกหักคืนแรก ไม่ร้องนะ แค่เปิดไฟทั้งห้อง 💡 mood จริง",hEN:"Heartbreak night 1: not crying, just turned on every light. The mood is real.",
+  steps:["ถ่ายมือกดสวิตช์ไฟทีละดวง 4–5 ช็อต · Film your hand flipping switches, 4–5 shots","แปะฮุกบนจอใน 2 วิแรก ไม่งั้นคนปัดหนีนะแก · Hook text in the first 2s or they scroll","จบด้วยแก้วชาอุ่นๆ + 'พรุ่งนี้ค่อยเศร้าต่อ' · End on a warm mug + 'I'll be sad again tomorrow'"],tm:"Post 21:00–22:30 · โพสต์ 3–4 ทุ่ม"},
+ {p:"IG",f:"Story × 3 + poll",hTH:"ใครอกหักอยู่คืนนี้ ยกมือขึ้น 🙋‍♀️ ไม่ต้องอาย we're in this together",hEN:"Who's heartbroken tonight? Hands up 🙋‍♀️ We're in this together.",
+  steps:["สตอรี่ 1: รูปฟ้า/หน้าต่าง + คำถาม · Story 1: sky/window pic + the question","สตอรี่ 2: โพล 'ร้องให้สุด / ของหวานเข้าปาก / นอนเลยแก' · Story 2: poll 'cry it out / dessert / just sleep'","สตอรี่ 3: หยิบคำคมจากคลังด้านล่างไปแปะ · Story 3: one quote from the bank below"],tm:"Post 20:00–21:00 · โพสต์ 2–3 ทุ่ม"},
+ {p:"TT",f:"Photo carousel",hTH:"สิ่งที่ฉันทำแทนการทักไปหาเขาคืนนี้ (สตรองมากแม่)",hEN:"What I did tonight instead of texting him (so strong, honestly)",
+  steps:["ถ่าย 5 รูป: มาสก์หน้า, ล้างจาน, เล่นกับแมว, จดไดอารี่, ขึ้นเตียง · 5 pics: face mask, dishes, cat, journal, bed","แคปชันสั้นๆ ทุกรูป ยิ่งแซวตัวเองยิ่งปัง · One short line per pic, self-roast is a plus","ปิดด้วย 'ทักฉันแทนได้นะ' ชวนคอมเมนต์ · End with 'text me instead' to get comments"],tm:"Post 22:00–23:30 · โพสต์ 4–5 ทุ่ม"}
+];
+/* calendar events 12 Oct – 8 Nov 2026 (t: respect | day | fun | prep) */
+HB.EVENTS=[
+ {d:"2026-10-13",t:"respect",en:"King Bhumibol Memorial Day (holiday)",th:"วันนวมินทรมหาราช · โทนสงบ"},
+ {d:"2026-10-23",t:"respect",en:"Chulalongkorn Day (holiday)",th:"วันปิยมหาราช · โทนสงบ"},
+ {d:"2026-10-26",t:"day",en:"End of Buddhist Lent",th:"วันออกพรรษา"},
+ {d:"2026-10-27",t:"day",en:"Tak Bat Devo (alms at dawn)",th:"ตักบาตรเทโว"},
+ {d:"2026-10-31",t:"fun",en:"Halloween 🎃",th:"ฮาโลวีน"},
+ {d:"2026-11-02",to:"2026-11-08",t:"prep",en:"Loy Krathong prep (24 Nov)",th:"เตรียมลอยกระทง"}
+];
+HB.SEASON="🌧 Week 1–2: ปลายฝน, sad-girl weather fr → 🌥 Week 3–4: ต้นหนาว, healing era unlocked (วันจริงเช็ก TMD อีกที) · 🎃 Halloween ส. 31 ต.ค. · 🪷 ออกพรรษา จ. 26 ต.ค. · 🏮 ลอยกระทง อ. 24 พ.ย. (เตรียมคอนเทนต์สัปดาห์ที่ 4)";
+HB.OUTSIDE=[
+ {en:"11.11 Singles' Day (Wed 11 Nov): single and thriving post + treat-yourself haul",th:"11.11 วันคนโสด: โสดแล้วปังกว่า + ช้อปให้ตัวเองแบบไม่ต้องขอใคร"},
+ {en:"Loy Krathong (Tue 24 Nov): float the ex energy away, solo or with the besties",th:"ลอยกระทง 24 พ.ย.: ลอยพลังงานแฟนเก่าทิ้งไป ไปเดี่ยวหรือไปกับแก๊งก็ได้"},
+ {en:"Day 30 of moving on (Day 1 = Mon 12 Oct → Day 30 = Tue 10 Nov)",th:"Day 30 ของการมูฟออน (เริ่ม 12 ต.ค. → อังคาร 10 พ.ย.) ฉลองหน่อยแม่"}
+];
+/* idea board. d = calendar date (optional); flags: respect | privacy */
+HB.IDEAS=[
+ {id:1,d:"2026-10-12",p:["TT"],pl:"story",f:"Video 20s",k:"มูฟออน moving on day 1 ลบแชต",hTH:"Day 1 ของการมูฟออน: ลบแชตแล้วนะ (เกือบ) 🫠",hEN:"Day 1 of moving on: I deleted the chat (almost), no cap",
+  cTH:"เริ่มนับ Day 1 อย่างเป็นทางการ ใครมูฟออนอยู่ มานับด้วยกัน แก๊งเราไม่ทิ้งกัน 🤍",cEN:"Day 1, officially. Moving on too? Count with me, nobody gets left behind.",shot:"Close-up thumb hovering over 'delete chat', then cut to you smiling at the camera like a main character.",tags:"#มูฟออน #อกหัก #Day1 #movingon",time:"Mon 21:00"},
+ {id:2,d:"2026-10-16",p:["IG"],pl:"quote",f:"Carousel 5 slides",k:"คำคม quotes ตัวเอง self-love",hTH:"5 ประโยคที่อยากบอกตัวเองตอนอกหักใหม่ๆ (สไลด์ 4 คือที่สุด)",hEN:"5 things I'd tell myself in heartbreak week one (slide 4 hits different)",
+  cTH:"เซฟเก็บไว้อ่านคืนที่ใจพัง สไลด์ไหนโดนสุด บอกมาเลย 👇",cEN:"Save this for the nights your heart's in pieces. Which slide got you?",shot:"Pastel backgrounds, big Thai text, small English under it (grab lines from the quote bank).",tags:"#คำคมอกหัก #ฮีลใจ #selflove",time:"Fri 20:00"},
+ {id:3,d:"2026-10-14",p:["TT"],pl:"fun",f:"POV video",k:"ตีสอง หลับยัง แชต night text ex",hTH:"POV: เขาทักมาว่า 'หลับยัง' ตอนตีสอง 💀",hEN:"POV: he texts 'you up?' at 2 a.m. 💀",
+  cTH:"คำตอบที่ถูกคือ… หลับแล้วค่ะ 😴 it's giving red flag ใครเคยโดนบ้าง",cEN:"Correct answer: asleep. It's giving red flag. Who's been there?",shot:"Phone lighting your face in the dark, slow 'nope' head shake, flip the phone face-down.",tags:"#POV #อกหัก #แฟนเก่า #fyp",time:"Wed 21:30"},
+ {id:4,d:"2026-10-15",p:["IG"],pl:"heal",f:"Reel 15s",k:"ฝน rain rainy คิดถึง cozy",hTH:"ฝนตกทีไร คิดถึงเขาทุกที… เลยสร้างรูทีนนี้ซะเลย ☔",hEN:"Every time it rains I miss him… so I built a whole routine about it",
+  cTH:"รูทีนวันฝนตก ฉบับคนใจยังไม่หาย: ชาร้อน ผ้าห่ม เพลงไม่มีเนื้อ cozy core สุดๆ",cEN:"Rainy-day routine for a still-healing heart: hot tea, blanket, no-lyrics music. Peak cozy core.",shot:"Rain on the window, steam from a mug, socks under a blanket, all in soft light.",tags:"#หน้าฝน #ฮีลใจ #rainyday",time:"Thu 19:30"},
+ {id:5,d:"2026-10-17",p:["TT"],pl:"glow",f:"Transition video",k:"glow up ลุคใหม่ แต่งหน้า",hTH:"Glow-up check: 1 อาทิตย์หลังเลิก ปังขึ้นไหมแก ✨",hEN:"Glow-up check: one week post-breakup. Did I eat?",
+  cTH:"จากตาบวม → ตาวิ้ง ใช้ 7 วัน (กับคอนซีลเลอร์ 1 แท่ง) ตัวแม่กลับมาแล้ว",cEN:"Puffy eyes to sparkly eyes in 7 days (plus one concealer). She's back.",shot:"Hand-over-lens transition: hoodie + no makeup → full look. Same angle both shots.",tags:"#glowup #โกลว์อัพ #อกหัก",time:"Sat 18:00"},
+ {id:6,d:"2026-10-18",p:["IG"],pl:"friends",f:"Story poll",k:"รูปแฟนเก่า ลบ เก็บ poll",hTH:"ทีมลบ vs ทีมเก็บ รูปแฟนเก่า เลือกข้างเลยแก",hEN:"Team delete vs team keep: pics with your ex. Pick a side.",
+  cTH:"โหวตมา พรุ่งนี้เฉลยว่าฉันอยู่ทีมไหน (spoiler: ยังลังเลอยู่ 🫣)",cEN:"Vote now, I'll reveal my team tomorrow (spoiler: still deciding).",shot:"Story with a blurred gallery screenshot (no faces) + poll sticker.",tags:"#โพลล์ #แฟนเก่า",time:"Sun 20:00",flags:["privacy"]},
+ {id:7,d:"2026-10-20",p:["TT"],pl:"story",f:"Talking head 30s",k:"บทเรียน lesson storytime",hTH:"ทุกอย่างที่รักครั้งนี้สอนฉัน สรุปใน 30 วิ",hEN:"Everything this relationship taught me, in 30 seconds",
+  cTH:"ไม่โทษใครนะ แค่จดไว้ให้ตัวเองในอนาคต character development ล้วนๆ",cEN:"Not blaming anyone, just notes for future me. Pure character development.",shot:"Sit by a window, numbered list on screen, quick jump cuts.",tags:"#storytime #บทเรียนความรัก #อกหัก",time:"Tue 21:00"},
+ {id:8,d:"2026-10-22",p:["IG"],pl:"quote",f:"Single image",k:"คำคม quote ปล่อย let go",hTH:"'ปล่อยมือไม่ได้แปลว่าแพ้นะแก'",hEN:"'Letting go isn't losing, bestie'",
+  cTH:"คำคมประจำวัน เขียนเองตอนตีหนึ่ง ตอนนั้น delulu นิดนึงแต่จริงใจ 🖊",cEN:"Quote of the day, written by me at 1 a.m. A little delulu, fully sincere.",shot:"Handwritten note on paper, shot from above with a warm lamp.",tags:"#คำคม #คำคมอกหัก #ฮีลใจ",time:"Thu 20:30"},
+ {id:9,d:"2026-10-26",p:["TT"],pl:"heal",f:"Vlog 30s",k:"ออกพรรษา วัด ทำบุญ ปล่อยวาง temple",hTH:"ออกพรรษาปีนี้ ขอออกจากความรู้สึกเดิมๆ ด้วยนะ 🙏",hEN:"End of Lent: I'm stepping out of my old feelings era too",
+  cTH:"ไปทำบุญ ใส่บาตร แล้วตั้งใจปล่อยวาง ใจเบาขึ้นเยอะเลย",cEN:"Made merit, set the intention to let go. Heart feels lighter.",shot:"Calm temple shots, flowers and candles; dress modestly, no jokes, no close-ups of monks.",tags:"#ออกพรรษา #ทำบุญ #ปล่อยวาง",time:"Mon 18:00",flags:["respect"]},
+ {id:10,d:"2026-10-24",p:["IG"],pl:"heal",f:"Photo dump carousel",k:"photo dump เดือนแรก",hTH:"Photo dump: เกือบเดือนแรกที่ไม่มีเขา (แต่มีตัวเอง)",hEN:"Photo dump: almost a month without him (but with me)",
+  cTH:"ไม่ได้แย่ไปซะหมด มีโมเมนต์ปังๆ เยอะกว่าที่คิดอีก",cEN:"Not all bad. Way more cute moments than I expected.",shot:"8–10 casual phone pics: food, sky, besties' hands, new book, cat.",tags:"#photodump #ฮีลใจ #มูฟออน",time:"Sat 19:00"},
+ {id:11,d:"2026-10-30",p:["TT"],pl:"fun",f:"Skit 15s",k:"ฮาโลวีน halloween ผี ghost online",hTH:"น่ากลัวกว่าผี: เห็นเขาออนไลน์แต่ไม่ทักมา 👻",hEN:"Scarier than ghosts: seeing him online and he doesn't text 👻",
+  cTH:"ฮาโลวีนปีนี้ ผีที่หลอนสุดอยู่ในแชต ใครโดน ghost มาบ้าง",cEN:"This Halloween the scariest ghost lives in my DMs. Who else got ghosted?",shot:"Horror-movie zoom on the 'online' dot (blurred name), dramatic scream, cut to eating snacks calmly.",tags:"#ฮาโลวีน #halloween #ghosted #อกหัก",time:"Fri 21:00",flags:["privacy"]},
+ {id:12,d:"2026-10-31",p:["IG"],pl:"glow",f:"Reel / photos",k:"ฮาโลวีน halloween costume ชุด แต่งตัว",hTH:"ชุดฮาโลวีนปีนี้: 'ผีที่เขาไม่เห็นค่า' 🎃 slay แบบหลอนๆ",hEN:"Halloween costume: 'the ghost he didn't appreciate'. Spooky slay.",
+  cTH:"แต่งเป็นผีที่สวยที่สุดในงาน ใครแต่งอะไร โชว์หน่อย 👀",cEN:"Going as the hottest ghost at the party. What are you wearing? Show me.",shot:"Mirror selfie in costume + one funny 'ghost' pose with a bedsheet.",tags:"#halloween #ฮาโลวีน #glowup",time:"Sat 18:30"},
+ {id:13,d:"2026-11-01",p:["TT"],pl:"story",f:"Talking head",k:"มูฟออน moving on day 21 หัวเราะ",hTH:"Day 21 ของการมูฟออน: หัวเราะได้แล้วจริงๆ ไม่จกตา",hEN:"Day 21 of moving on: I actually laughed today, no cap",
+  cTH:"3 อาทิตย์ผ่านไป ยังไม่หายสนิทแต่เบาลงเยอะ healing era กำลังโหลด 📶",cEN:"Three weeks in. Not fully healed, way lighter. Healing era loading.",shot:"Same spot and framing as Day 1 so the before/after is obvious.",tags:"#มูฟออน #Day21 #movingon",time:"Sun 20:00"},
+ {id:14,d:"2026-11-03",p:["IG"],pl:"heal",f:"Reel 10s",k:"ลมหนาว หนาว cool weather เย็น",hTH:"ลมหนาวมาแล้ว ใจก็ชิลลงด้วย 🌥",hEN:"Cool breeze is here, and my heart chilled out too",
+  cTH:"เช้าแรกที่อากาศเย็น เหมาะกับการเริ่มใหม่ new season new me",cEN:"First cool morning. New season, new me.",shot:"Morning walk, cardigan, deep breath, sunrise light.",tags:"#ลมหนาว #ฮีลใจ #newbeginnings",time:"Tue 07:30"},
+ {id:15,d:"2026-11-05",p:["TT"],pl:"glow",f:"GRWM",k:"ลอยกระทง loy krathong ชุดไทย outfit",hTH:"GRWM ชุดไทยไปลอยกระทง ฉบับสาวโสด (เตรียมตัว)",hEN:"GRWM: Loy Krathong outfit, single-girl edition",
+  cTH:"ปีนี้ไม่มีคู่ แต่มีชุดปังมาก 💛 ลอง 3 ลุค ช่วยเลือกหน่อย",cEN:"No date this year, but the outfit? Iconic. Help me pick 1 of 3.",shot:"3 outfit try-ons with a beat-synced cut; end with 'which one?' on screen.",tags:"#ลอยกระทง #ชุดไทย #GRWM",time:"Thu 20:00"},
+ {id:16,d:"2026-11-07",p:["IG"],pl:"quote",f:"Carousel",k:"ลอยกระทง loy krathong เขียน ปล่อย",hTH:"เขียนสิ่งที่อยากปล่อยไปก่อนลอยกระทง ✍️",hEN:"Write down what you're letting go of before Loy Krathong",
+  cTH:"ฉันเขียน 3 ข้อ แล้วแกล่ะ? คอมเมนต์ได้ (ไม่ต้องเอ่ยชื่อใครนะ)",cEN:"I wrote 3 things. You? Drop them below (no names needed).",shot:"Slides of handwritten notes next to banana leaf and flowers (krathong craft stuff).",tags:"#ลอยกระทง #ปล่อยวาง #คำคม",time:"Sat 19:30"},
+ {id:17,d:"2026-11-08",p:["TT"],pl:"friends",f:"Stitch / duet prompt",k:"เพื่อน friends comment ใครหายเร็ว",hTH:"ใครอกหักแล้วหายไวสุด? แชร์สูตรหน่อยแม่",hEN:"Who got over a heartbreak the fastest? Spill the recipe",
+  cTH:"สติตช์มาเลย เดี๋ยวรวมทริคเด็ดทำคลิปต่อ ช่วยกันฮีล",cEN:"Stitch this, I'll compile the best tips in a part 2. Group healing.",shot:"Direct-to-camera question, text prompt on screen, leave 3s of silence for stitches.",tags:"#stitch #อกหัก #มูฟออน",time:"Sun 20:30"},
+ {id:18,p:["IG"],pl:"fun",f:"Meme carousel",k:"หมูกระทะ ชาบู กิน food อาการ",hTH:"อาการอกหักแบบไทยๆ: หมูกระทะคนเดียวก็ได้ป่ะ 🥓",hEN:"Thai-style heartbreak symptoms: mookata for one, why not",
+  cTH:"ข้อ 4 คือฉันเป๊ะ ใครเป็นบ้าง แท็กมา 😂",cEN:"Symptom 4 is literally me. Who else? Tag them.",shot:"5 meme slides with real pics of you: mookata for one, ice cream at midnight, sad-playlist face.",tags:"#อกหัก #มีม #หมูกระทะ",time:"Any evening"},
+ {id:19,p:["TT"],pl:"heal",f:"Voice-over 30s",k:"จดหมาย letter คิดถึง ไม่ได้ส่ง",hTH:"จดหมายที่ฉันเขียน แต่จะไม่มีวันส่ง 💌",hEN:"The letter I wrote but will never send",
+  cTH:"อ่านให้ฟังรอบเดียว แล้วยัดเก็บลิ้นชักไปเลย closure ที่ให้ตัวเอง",cEN:"Reading it out loud once, then into the drawer. Self-made closure.",shot:"Voice-over on paper + rain sounds (no song lyrics), slow pan, fold the letter at the end.",tags:"#จดหมายที่ไม่ได้ส่ง #อกหัก #ฮีลใจ",time:"Any night 22:00"},
+ {id:20,p:["IG"],pl:"friends",f:"Photo + caption",k:"เพื่อน friends ขอบคุณ ตีสาม",hTH:"ขอบคุณเพื่อนที่โทรมาตอนตีสาม bestie of the year 🏆",hEN:"Thank you to the friend who called at 3 a.m. Bestie of the year.",
+  cTH:"แท็กเพื่อนที่อยู่ข้างแกตอนใจพัง 🫶 คนนี้ต้องเลี้ยงชาบู",cEN:"Tag the friend who showed up when your heart broke. They deserve shabu.",shot:"Photo with your bestie (ask her first) or two mugs on a table.",tags:"#เพื่อนซี้ #ขอบคุณ #bff",time:"Any evening"},
+ {id:21,d:"2026-10-29",p:["TT"],pl:"fun",f:"Reaction video",k:"แชตเก่า old chat react ตลก",hTH:"รีแอคแชตเก่าตัวเอง (ขอโทษอดีตตัวเองด้วยนะ) 😭",hEN:"Reacting to my old chats (sorry, past me)",
+  cTH:"ทำไมพิมพ์ยาวเป็นเรียงความ 😭 delulu ระดับตัวแม่ (เบลอชื่อแล้ว)",cEN:"Why did I type an essay? Delulu at its peak. (names blurred)",shot:"Green-screen over blurred screenshots, only YOUR messages readable.",tags:"#reaction #แชตเก่า #อกหัก",time:"Thu 21:00",flags:["privacy"]},
+ {id:22,d:"2026-11-04",p:["IG"],pl:"glow",f:"Before / after Reel",k:"ตัดผม haircut glow up ลุคใหม่",hTH:"ตัดผมหลังเลิก: before vs after ✂️ it's giving new era",hEN:"The post-breakup haircut: before vs after. It's giving new era.",
+  cTH:"สาวอกหักต้องตัดผมจริงไหม? ลองแล้ว และ… ปังมาก",cEN:"Do heartbroken girls really cut their hair? Tried it. Ate.",shot:"Salon chair before, snip sound, hair-flip reveal after.",tags:"#ตัดผม #glowup #ลุคใหม่",time:"Wed 19:00"}
+];
+/* Day X of moving on: one prompt per day (cycles if > 30) */
+HB.DAYX=[
+ ["ลบหรือเก็บ? วันแรกทำอะไรกับแชตเขา","Delete or keep? What I did with the chat on day one"],
+ ["เรื่องเล็กๆ ที่ทำให้ยิ้มได้วันนี้","One tiny thing that made me smile today"],
+ ["เปลี่ยนวอลเปเปอร์มือถือ bye bye รูปคู่","New phone wallpaper, bye couple pic"],
+ ["มื้อที่กินคนเดียวแล้วแฮปปี้กว่าเดิม","A solo meal that hit better than expected"],
+ ["เพลย์ลิสต์ใหม่ (ไม่มีเพลงของเรา)","New playlist (zero 'our songs')"],
+ ["ออกไปเดินรับลม 20 นาที touch grass","20-minute walk outside, touching grass"],
+ ["Week 1 recap: ร้องกี่รอบ ยิ้มกี่รอบ","Week 1 recap: cries vs smiles"],
+ ["จัดห้องใหม่ room glow-up","Room makeover, room glow-up"],
+ ["ทักเพื่อนเก่าที่หายกันไปนาน","Texting an old friend I lost touch with"],
+ ["คาเฟ่ที่ไม่เคยไปกับเขา main character moment","A café we never went to, main character moment"],
+ ["เขียนข้อดีของตัวเอง 5 ข้อ (ห้ามถ่อมตัว)","5 things I love about me (no being humble)"],
+ ["วันที่ไม่ไหว และนั่นก็โอเคนะ","A bad day, and that's valid"],
+ ["ลองงานอดิเรกใหม่ new hobby unlocked","New hobby unlocked"],
+ ["Week 2 recap: เปลี่ยนไปยังไงบ้าง","Week 2 recap: what changed"],
+ ["ถามคนดู: มูฟออนกันถึง Day ไหนแล้ว","Ask viewers: what day are you on?"],
+ ["เก็บของความทรงจำใส่กล่อง","Boxing up the memories"],
+ ["นั่งดูพระอาทิตย์ตกคนเดียว","Solo sunset date"],
+ ["ออกกำลังกายครั้งแรกในรอบเดือน","First workout in a month"],
+ ["อ่านคอมเมนต์ให้กำลังใจ ซึ้งมาก","Reading your sweet comments, crying (the good kind)"],
+ ["ทำสิ่งที่เขาไม่ชอบ แต่ฉันชอบ","Doing something I love that he didn't"],
+ ["Week 3 recap: หัวเราะได้แล้ว","Week 3 recap: laughing again"],
+ ["จดหมายถึงตัวเองในอีก 1 ปี","A letter to me, one year from now"],
+ ["ลุคใหม่ / ทรงผมใหม่ new era","New look / new hair, new era"],
+ ["ทริปสั้นๆ ไปไหนก็ได้ที่ไม่ใช่ที่เดิม","A mini trip, anywhere that isn't 'our place'"],
+ ["สิ่งที่เพิ่งรู้เกี่ยวกับตัวเอง","What I just learned about myself"],
+ ["ไปทำบุญ / นั่งสมาธิ 10 นาที","Merit-making or 10 minutes of quiet"],
+ ["คืนวันศุกร์กับแก๊งเพื่อน","Friday night with the girls"],
+ ["Week 4 recap: ยังคิดถึงไหม (ตอบแบบไม่จกตา)","Week 4 recap: do I still miss him? (honest)"],
+ ["ขอบคุณตัวเองที่ไม่ยอมแพ้","Thanking myself for not giving up"],
+ ["ก่อน vs หลัง (มุมเดิมกับ Day 1)","before vs after (same angle as Day 1)"]
+];
+/* hook / คำคม bank: 30 original short lines (written for this board, not lyrics) */
+HB.QUOTES=[
+ ["ใจพังได้ แต่ชีวิตยังต้อง slay ต่อ","Heart can break; life still has to slay."],
+ ["ไม่ได้ลืมนะ แค่ไม่เจ็บเท่าเดิมแล้ว","Didn't forget. It just stopped hurting this much."],
+ ["รักตัวเองให้ปังเท่าที่เคยรักเขา","Love yourself as loud as you loved him."],
+ ["ปล่อยมือไม่ได้แปลว่าแพ้นะแก","Letting go isn't losing, bestie."],
+ ["วันนี้ร้องไห้ พรุ่งนี้ทาลิปสีใหม่ ตัวแม่","Cry today, new lipstick tomorrow. Mother."],
+ ["คนที่ใช่ ไม่ทำให้เราต้อง delulu","The right one won't make you go delulu."],
+ ["เลิกรอแชตเขา มารอตัวเองดีกว่า","Stop waiting for his text; wait up for yourself."],
+ ["เจ็บครั้งนี้ ค่าเรียนแพงหน่อย แต่จบหลักสูตร","Pricey tuition, but I graduated."],
+ ["ใจเราไม่ใช่ที่พักชั่วคราวของใคร no cap","My heart isn't anyone's Airbnb, no cap."],
+ ["มูฟออนช้าๆ ก็ยังนับว่ามูฟออน","Slow moving on still counts."],
+ ["บางคนมาเพื่อสอน ไม่ได้มาเพื่ออยู่","Some people come to teach, not to stay."],
+ ["เงียบไม่ใช่แพ้ เงียบคือพอแล้ว","Silence isn't losing. Silence is 'I'm done'."],
+ ["อกหักไม่ตายหรอก แค่หิวชาบู","Heartbreak won't take me out. I'm just craving shabu."],
+ ["ขอบคุณที่ไป ฉันจะได้เจอตัวเองสักที","Thanks for leaving; now I get to meet me."],
+ ["ความทรงจำเก็บไว้ได้ แต่ไม่ต้องย้อนกลับไป","Keep the memories, skip the comeback."],
+ ["ไม่ต้องรีบหาย แค่อย่าหยุดเดิน","No rush to heal. Just keep walking."],
+ ["เคยเป็นทั้งหมด ตอนนี้เป็นแค่ซีซั่นนึง","You were everything; now you're one season."],
+ ["ฝนตกได้ ฟ้าก็กลับมาสดใสได้","It can rain, and the sky can glow again."],
+ ["รักครั้งหน้า ขอรักตัวเองก่อน me first","Next love: me first."],
+ ["หัวใจซ่อมได้ ด้วยเวลาและแก๊งเพื่อนดีๆ","Hearts get fixed with time and a good squad."],
+ ["ไม่ใช่ไม่ดีพอ แค่ไม่ใช่คนนั้น","Not 'not enough', just not the one."],
+ ["ปิดแชต เปิดใจ ให้ตัวเอง","Close the chat, open your heart to yourself."],
+ ["วันนี้คิดถึงน้อยลงหนึ่งนาที ความคืบหน้าเริ่ด","Missed you one minute less today. Progress."],
+ ["ร้องไห้ให้สุด แล้วลุกมาสวยแบบ main character","Cry it out, then rise like the main character."],
+ ["ไม่เห็นค่าก็ไม่เป็นไร ฉันเห็นค่าตัวเองพอ","You didn't see my worth? Fine. I see it."],
+ ["เหงาไม่ใช่เหตุผลที่จะย้อนกลับไป","Lonely isn't a reason to go back."],
+ ["ไม่ได้หายไปไหน แค่กลับมาหาตัวเอง","Didn't disappear; I came back to myself."],
+ ["ลอยความเศร้าไปกับกระทงปีนี้ บ๊ายบาย","Floating the sadness off with this year's krathong. Bye."],
+ ["ลมหนาวมา ใจก็ชิลตาม","Cool wind's here, and my heart chilled too."],
+ ["จบแบบนี้ ก็ยังเป็นตอนจบที่ดีของฉัน healing era","Even this ending is a good one for me. Healing era."]
+];
+/* chart ideas (sketches only) */
+HB.VIZ=[
+ {k:"line",en:"'Day X' series: views per episode, Day 1 → Day 30 (is the arc eating?)",th:"ซีรีส์มูฟออน: ยอดวิวต่อตอน Day 1 → 30"},
+ {k:"heat",en:"Best posting hour heatmap (day × hour), IG vs TikTok",th:"ฮีตแมปเวลาโพสต์ (วัน × ชั่วโมง) แยก IG/TikTok"},
+ {k:"bars",en:"Saves per 1,000 reach by pillar (do quotes get saved the most?)",th:"ยอดเซฟต่อคนเห็น 1,000 แยกหมวด (คำคมโดนเซฟสุดไหม?)"},
+ {k:"ab",en:"Hook A/B: which first line keeps people watching",th:"ทดสอบฮุก A/B: ประโยคแรกแบบไหนคนดูต่อ"},
+ {k:"cloud",en:"Comment vibe words (what your audience is feeling)",th:"คำในคอมเมนต์ (คนดูฟีลไหน)"},
+ {k:"gal",en:"Top 6 posts gallery with saves + shares",th:"แกลเลอรี 6 โพสต์ปังสุด พร้อมเซฟ + แชร์"}
+];
+HB.SOURCES=[
+ {t:"Thai public holidays 2026 (13 Oct, 23 Oct): Bank of Thailand holiday calendar",u:"https://www.bot.or.th/en/financial-institutions-holiday.html"},
+ {t:"Ok Phansa 26 Oct 2026 / Loy Krathong 24 Nov 2026: TAT events calendar (check the latest)",u:"https://www.tourismthailand.org/Events-and-Festivals"},
+ {t:"Season change (rain → cool): Thai Meteorological Department announcements",u:"https://www.tmd.go.th/"},
+ {t:"Mental-health hotline 1323 (Department of Mental Health, 24 h)",u:"https://www.dmh.go.th/"}
+];
+
+/* Offline idea generator for the mood/theme box (no external AI).
+   Latin terms match whole words (+s/es); Thai terms are substrings minus excl.
+   {c}/{C} theme phrase TH/EN · {s}/{S} shot scene TH/EN · {e} emoji · {n} day number · {q}/{Q} a quote from the bank */
+HB.GEN={
+ CONCEPTS:[
+  {id:"sad",terms:["เศร้า","เสียใจ","ร้องไห้","น้ำตา","sad","cry","crying","tears","heartbroken","heartbreak","อกหัก"],excl:[],th:"คืนที่ร้องไห้",en:"a crying night",s:"ทิชชู่ข้างหมอน ไฟสลัว",S:"tissues by the pillow, dim light",e:"🥲",tag:"#อกหัก #ร้องไห้"},
+  {id:"miss",terms:["คิดถึง","miss","missing","nostalgia"],excl:[],th:"วันที่คิดถึงเขา",en:"a day I miss him",s:"เลื่อนดูรูปเก่าในมือถือ (เบลอหน้า)",S:"scrolling old photos (faces blurred)",e:"💭",tag:"#คิดถึง #อกหัก"},
+  {id:"angry",terms:["โกรธ","โมโห","หงุดหงิด","angry","mad","rage"],excl:[],th:"วันที่โกรธมาก",en:"an angry day",s:"ต่อยหมอน แล้วเต้นแรงๆ ในห้อง",S:"punching a pillow, then dancing it out",e:"😤",tag:"#ระบาย #อกหัก"},
+  {id:"moveon",terms:["มูฟออน","ก้าวต่อ","ลืม","move on","moving on","movingon","forget"],excl:[],th:"ช่วงมูฟออน",en:"the moving-on days",s:"เดินออกจากประตูบ้าน มุมกล้องเดิมทุกวัน",S:"walking out the front door, same angle every day",e:"🚶‍♀️",tag:"#มูฟออน #movingon"},
+  {id:"glow",terms:["โกลว์อัพ","แต่งหน้า","ลุคใหม่","สวย","ทรงผม","glow up","glowup","glow-up","makeup","outfit","haircut"],excl:[],th:"วันเปลี่ยนลุค",en:"a new-look day",s:"ทรานซิชันเอามือปิดกล้อง ก่อน/หลังแต่งตัว",S:"hand-over-lens transition, before/after getting ready",e:"✨",tag:"#glowup #โกลว์อัพ"},
+  {id:"rain",terms:["ฝน","rain","rainy","monsoon"],excl:["ความฝัน","ฝันดี","ฝันร้าย"],th:"วันฝนตก",en:"a rainy day",s:"หยดฝนบนกระจก + ไอน้ำจากแก้วชา",S:"raindrops on glass + steam from a mug",e:"☔",tag:"#หน้าฝน #rainyday"},
+  {id:"cold",terms:["หนาว","ลมหนาว","อากาศเย็น","cool","cold","winter","chilly"],excl:[],th:"เช้าวันลมหนาวแรก",en:"the first cool morning",s:"เสื้อคาร์ดิแกน แดดเช้า เดินรับลม",S:"cardigan, morning sun, a slow walk",e:"🌥",tag:"#ลมหนาว #ฮีลใจ"},
+  {id:"halloween",terms:["ฮาโลวีน","ผี","halloween","ghost","ghosted","spooky"],excl:[],th:"คืนฮาโลวีน",en:"Halloween night",s:"ไฟฟักทอง แต่งหน้าผีสวยๆ",S:"pumpkin lights, pretty-ghost makeup",e:"🎃",tag:"#ฮาโลวีน #halloween"},
+  {id:"krathong",terms:["ลอยกระทง","กระทง","loy krathong","krathong","yi peng"],excl:[],th:"ช่วงลอยกระทง",en:"Loy Krathong season",s:"ทำกระทงใบตองเอง ไฟระยิบระยับ",S:"making a banana-leaf krathong, fairy lights",e:"🪷",tag:"#ลอยกระทง #loykrathong"},
+  {id:"phansa",terms:["ออกพรรษา","ทำบุญ","วัด","ตักบาตร","temple","merit","lent"],excl:["วัดผล"],th:"วันออกพรรษา",en:"the end of Buddhist Lent",s:"ดอกไม้ เทียน ลานวัดเงียบๆ (แต่งกายสุภาพ)",S:"flowers, candles, a quiet temple yard (dress modestly)",e:"🙏",tag:"#ออกพรรษา #ปล่อยวาง",flag:"respect"},
+  {id:"cafe",terms:["คาเฟ่","กาแฟ","ชานม","cafe","café","coffee","latte"],excl:[],th:"วันนั่งคาเฟ่คนเดียว",en:"a solo café day",s:"แก้วกาแฟ หนังสือ โต๊ะริมหน้าต่าง",S:"coffee cup, a book, window seat",e:"☕",tag:"#คาเฟ่ #คนเดียวก็ได้"},
+  {id:"friends",terms:["เพื่อน","friend","friends","bff","bestie","besties"],excl:[],th:"คืนกับเพื่อนซี้",en:"a night with my besties",s:"มือเพื่อนๆ ชนแก้ว (ขออนุญาตก่อนลง)",S:"friends' hands clinking glasses (ask first)",e:"🫶",tag:"#เพื่อนซี้ #bff"},
+  {id:"travel",terms:["เที่ยว","ทะเล","ภูเขา","ทริป","trip","travel","beach","mountain"],excl:[],th:"ทริปเที่ยวคนเดียว",en:"a solo trip",s:"วิวจากหน้าต่างรถไฟ/รถทัวร์ เท้าบนทราย",S:"view from a train window, feet in the sand",e:"🧳",tag:"#เที่ยวคนเดียว #solotrip"},
+  {id:"music",terms:["เพลง","ดนตรี","music","song","songs","playlist"],excl:[],th:"คืนเปิดเพลงเศร้า",en:"a sad-playlist night",s:"หูฟัง แสงไฟเมือง (ใช้เสียงในแอป ไม่ใส่เนื้อเพลงคนอื่น)",S:"headphones, city lights (use in-app sounds, no one else's lyrics)",e:"🎧",tag:"#เพลย์ลิสต์ #อกหัก"},
+  {id:"selflove",terms:["รักตัวเอง","ดูแลตัวเอง","สกินแคร์","healing era","healing","self love","self-love","selflove","self care","self-care","skincare"],excl:[],th:"วันรักตัวเอง",en:"a self-love day",s:"มาสก์หน้า ดอกไม้ ไดอารี่",S:"face mask, flowers, a journal",e:"💗",tag:"#รักตัวเอง #selflove"},
+  {id:"ex",terms:["แฟนเก่า","ทักมา","แชต","แชท","ex","chat","text","texted"],excl:[],th:"วันที่แฟนเก่าทักมา",en:"the day my ex texted",s:"มือถือคว่ำบนโต๊ะ (เบลอชื่อ)",S:"phone face-down on the table (names blurred)",e:"📱",tag:"#แฟนเก่า #อกหัก",flag:"privacy"},
+  {id:"night",terms:["ดึก","ตีสอง","ตีสาม","นอนไม่หลับ","midnight","insomnia","2am","3am","sleepless"],excl:[],th:"คืนที่นอนไม่หลับ",en:"a sleepless night",s:"เพดานห้อง ไฟหัวเตียง นาฬิกาตีสอง",S:"ceiling, bedside lamp, clock at 2 a.m.",e:"🌙",tag:"#นอนไม่หลับ #อกหัก"},
+  {id:"food",terms:["หมูกระทะ","ชาบู","ไอติม","ของหวาน","ขนม","กิน","food","eat","eating","dessert","ice cream","mookata"],excl:[],th:"คืนกินของหวานคนเดียว",en:"a dessert-for-one night",s:"ไอติมทั้งกล่อง ช้อนเดียว",S:"a whole tub of ice cream, one spoon",e:"🍨",tag:"#กินคนเดียว #อกหัก"},
+  {id:"workout",terms:["ออกกำลังกาย","ยิม","วิ่ง","โยคะ","gym","workout","run","running","yoga"],excl:[],th:"วันออกไปวิ่ง",en:"a running day",s:"รองเท้าวิ่ง สวนสาธารณะ เหงื่อ",S:"running shoes, the park, sweat",e:"🏃‍♀️",tag:"#ออกกำลังกาย #มูฟออน"},
+  {id:"single",terms:["โสด","คนโสด","single","11.11"],excl:[],th:"ชีวิตโสด",en:"single life",s:"ช้อปของให้ตัวเอง แกะกล่องพัสดุ",S:"shopping for me, unboxing a parcel",e:"💅",tag:"#โสด #single"},
+  {id:"dumped",terms:["นอกใจ","ถูกเท","โดนเท","เทใจ","cheat","cheated","dumped"],excl:[],th:"วันที่รู้ว่าถูกเท",en:"the day I got dumped",s:"ฉากเงียบๆ: แก้วน้ำ เก้าอี้ว่าง",S:"a quiet scene: a glass of water, an empty chair",e:"💔",tag:"#ถูกเท #อกหัก",flag:"privacy"},
+  {id:"delulu",terms:["delulu","เพ้อ","คิดไปเอง","มโน"],excl:[],th:"โหมด delulu",en:"full delulu mode",s:"เปิดแชตเก่าอ่านซ้ำแล้วยิ้มเอง (เบลอชื่อ)",S:"rereading old chats and smiling at nothing (names blurred)",e:"🫠",tag:"#delulu #คิดไปเอง",flag:"privacy"},
+  {id:"work",terms:["ทำงาน","ออฟฟิศ","เรียน","work","office","study","school"],excl:["ทุเรียน","เรียนรู้","บทเรียน"],th:"วันที่ต้องไปทำงานทั้งที่ใจพัง",en:"a workday with a broken heart",s:"โต๊ะทำงาน กาแฟ แว่นกันแดดกลบตาบวม",S:"desk, coffee, sunglasses hiding puffy eyes",e:"💼",tag:"#ชีวิตคนทำงาน #อกหัก"}
+ ],
+ CRISIS:["อยากตาย","ฆ่าตัวตาย","ทำร้ายตัวเอง","ไม่อยากอยู่","suicide","suicidal","self-harm","self harm","kill myself","want to die"],
+ CARE:{id:"care",th:"คืนที่ใจไม่ไหว",en:"a night when it's all too much",s:"ไฟอุ่นๆ ผ้าห่ม ถือมือถือโทรหาเพื่อน",S:"warm light, a blanket, phone in hand to call a friend",e:"🤍",tag:"#ฮีลใจ #ไม่เป็นไรนะ #ค่อยๆไป"},
+ TEMPLATES:[
+  {p:"TT",pl:"story",f:"Talking head 20–30s",hTH:"Day {n} ของการมูฟออน: {c} {e} (เม้าท์ให้ฟัง)",hEN:"Day {n} of moving on: {C}, storytime",cTH:"Day {n} แล้วแก วันนี้คือ{c} เล่าแบบสั้นๆ ไม่ดราม่า (นิดนึง)",cEN:"Day {n}, bestie. Today was {C}. Short version, minimal drama.",shot:"{S}; same framing as your Day 1 clip, main character energy."},
+  {p:"TT",pl:"fun",f:"POV skit 15s",hTH:"POV: อกหัก + {c} = ฉันตอนนี้ {e} mood มาก",hEN:"POV: heartbreak + {C} = me rn. The mood.",cTH:"ใครเป็นแบบนี้ยกมือ 🙋‍♀️ it's giving relatable",cEN:"Hands up if this is you. It's giving relatable.",shot:"Hook text in the first 2s, then {S}, end with a deadpan stare into the lens."},
+  {p:"TT",pl:"heal",f:"Video 3 tips",hTH:"3 อย่างที่ช่วยฮีลใจฉันใน{c} {e}",hEN:"3 things that healed me on {C}",cTH:"ไม่ต้องทำครบนะ ข้อเดียวก็นับ healing era ไม่ต้องรีบ",cEN:"You don't need all three, one counts. Healing era, no rush.",shot:"One shot per tip: {S}. Numbered text on screen."},
+  {p:"TT",pl:"glow",f:"Transition video",hTH:"Glow-up ฉบับ{c} {e} ปังมากแม่",hEN:"Glow-up: {C} edition. She ate.",cTH:"ใจยังพังได้ แต่ลุคต้องรอด ตัวแม่ไม่ยอมแพ้ ✨",cEN:"Heart's a mess, the look survives. Mother doesn't quit.",shot:"Hand-over-lens transition. Before: hoodie. After: {S}."},
+  {p:"TT",pl:"friends",f:"Stitch prompt",hTH:"ใครเคยผ่าน{c} มาบ้าง? สติตช์มาเม้าท์หน่อย",hEN:"Who's survived {C}? Stitch and spill",cTH:"เดี๋ยวรวมคำแนะนำเด็ดๆ ทำ part 2 {e} ช่วยกันฮีลนะแก๊ง",cEN:"I'll compile the best advice for a part 2. Group healing, squad.",shot:"Direct-to-camera question, then 3s of {S} for stitchers."},
+  {p:"IG",pl:"quote",f:"Single image / carousel",hTH:"คำคมสำหรับ{c} {e} เซฟไว้เลย",hEN:"A quote for {C}. Save it.",cTH:"'{q}' เก็บไว้อ่านวันที่ใจไม่ไหว",cEN:"'{Q}' Keep this for the hard days.",shot:"Pastel background, big Thai line, small English under it; optional pic: {S}."},
+  {p:"IG",pl:"heal",f:"Reel 10–15s",hTH:"รูทีนฮีลใจใน{c} {e} soft girl mode",hEN:"Healing routine for {C}, soft girl mode",cTH:"ช้าๆ ชิลๆ ใจจะเบาลงเอง ไม่ต้องฝืนนะ",cEN:"Slow and soft. The heart lightens on its own, don't force it.",shot:"4 calm clips: {S}. Soft in-app sound, no lyrics."},
+  {p:"IG",pl:"story",f:"Carousel 5 slides",hTH:"5 สไลด์: {c}ของฉันเป็นแบบนี้ (สไลด์สุดท้ายสำหรับแก)",hEN:"5 slides: what {C} looked like for me (last one's for you)",cTH:"สไลด์สุดท้ายคือสิ่งที่อยากบอกคนที่เจ็บอยู่ตอนนี้ {e}",cEN:"The last slide is for anyone hurting right now.",shot:"Real phone pics ({S}) with one short line per slide."},
+  {p:"IG",pl:"friends",f:"Story poll",hTH:"{c}: ทีมนอนอยู่บ้าน หรือ ทีมออกไปปังข้างนอก?",hEN:"{C}: team stay-in or team go-out-and-slay?",cTH:"โหวตมา พรุ่งนี้เฉลยว่าฉันเลือกอะไร {e}",cEN:"Vote, I'll show you what I picked tomorrow.",shot:"Story background: {S} + poll sticker + question sticker."},
+  {p:"IG",pl:"glow",f:"Photo dump",hTH:"Photo dump: {c} แต่ลุคยังต้องปัง {e}",hEN:"Photo dump: {C}, but make it cute",cTH:"ไม่ได้โอเคทุกวันหรอก แต่วันนี้แต่งตัวสวย ขอ slay หน่อย",cEN:"Not okay every day, but dressed up today. Let me slay.",shot:"6–8 casual pics: mirror selfie, {S}, details."},
+  {p:"IG",pl:"fun",f:"Meme carousel",hTH:"มีม: อาการคนอกหักใน{c} {e} ใครเป็นบ้าง",hEN:"Meme: heartbreak symptoms on {C}. Who's this?",cTH:"ข้อไหนตรงสุด คอมเมนต์เลข 1–5 มาเลย no judgement",cEN:"Which one is you? Comment 1–5, no judgement.",shot:"5 meme slides using your own pics ({S}), big captions."}
+ ]
+};
+</script>
+<script>(function(){
+"use strict";
+var $=function(s){return document.querySelector(s)}, esc=function(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})};
+var DTH=["อา.","จ.","อ.","พ.","พฤ.","ศ.","ส."], DEN=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"], MTH=["ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค."], MEN=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function D(s){var p=s.split("-");return new Date(Date.UTC(+p[0],p[1]-1,+p[2]))}
+function iso(d){return d.toISOString().slice(0,10)}
+function fd(s){var d=D(s);return DEN[d.getUTCDay()]+" "+d.getUTCDate()+" "+MEN[d.getUTCMonth()]+" · "+DTH[d.getUTCDay()]+" "+d.getUTCDate()+" "+MTH[d.getUTCMonth()]}
+function toast(m,ms){var t=$("#toast");t.textContent=m;t.classList.add("on");clearTimeout(t._h);t._h=setTimeout(function(){t.classList.remove("on")},ms||2500)}
+function nf(n){return n==null||isNaN(n)?"–":Math.round(n).toLocaleString("en-US")}
+function platPills(p){return p.map(function(k){return '<span class="pl '+HB.PLAT[k].cls+'">'+HB.PLAT[k].en+'</span>'}).join("")}
+function pillTag(k){var p=HB.PILLAR[k];return '<span class="pil" style="color:'+p.c+'">'+p.en+' · '+p.th+'</span>'}
+function flagTag(f){if(f==="respect")return '<span class="flag resp">🙏 Calm tone · โทนสงบ</span>';if(f==="privacy")return '<span class="flag priv">🔒 Blur names/faces · เบลอชื่อ/หน้า กันดราม่า</span>';if(f==="care")return '<span class="flag care">🤍 Soft & gentle · โทนอ่อนโยน</span>';return ""}
+function flagsOf(i){return i.flags||[]}
+function flagsHTML(i){return flagsOf(i).map(flagTag).join(" ")}
+function evFor(s){return HB.EVENTS.filter(function(e){return e.to?(s>=e.d&&s<=e.to):e.d===s})}
+function copyText(txt){
+  function fb(){var ta=document.createElement("textarea");ta.value=txt;ta.style.position="fixed";ta.style.opacity="0";document.body.appendChild(ta);ta.select();var ok=false;try{ok=document.execCommand("copy")}catch(e){}ta.remove();
+    if(ok)toast("Copied! · ก๊อปแล้ว ไปปังเลย");else prompt("Copy:",txt)}
+  if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(txt).then(function(){toast("Copied! · ก๊อปแล้ว ไปปังเลย")},fb);else fb();
+  window.HB_LAST_COPY=txt;
+}
+
+/* ---------- tonight ---------- */
+function renderEasy(){
+  $("#easyCards").innerHTML=HB.EASY.map(function(i,n){
+    return '<div class="ecard '+HB.PLAT[i.p].cls+'"><div class="num">'+(n+1)+'</div><div class="day">Tonight · คืนนี้เลยแม่</div>'+
+      '<div class="row" style="margin-top:6px">'+platPills([i.p])+' <span class="pil" style="color:#374151">'+esc(i.f)+'</span></div>'+
+      '<div class="hook">'+esc(i.hTH)+'</div><div class="hook-en">'+esc(i.hEN)+'</div>'+
+      '<ol>'+i.steps.map(function(s){return "<li>"+esc(s)+"</li>"}).join("")+'</ol>'+
+      '<div class="row"><span class="tm">🕒 '+esc(i.tm)+'</span> <button class="copy" data-copyeasy="'+n+'">📋 Copy hook · ก๊อปไป</button></div></div>'}).join("");
+}
+
+/* ---------- calendar ---------- */
+function renderCal(){
+  $("#season").innerHTML=esc(HB.SEASON);
+  var h='<div></div>';for(var k=1;k<=7;k++){var x=k%7;h+='<div class="hd">'+DEN[x]+' · '+DTH[x]+'</div>'}
+  var start=D("2026-10-12"), today=iso(new Date(Date.now()+7*3600e3));
+  for(var w=0;w<4;w++){
+    h+='<div class="wk">Week '+(w+1)+'<br><span class="th">สัปดาห์ '+(w+1)+'</span><br><span class="th" style="font-weight:500">'+(w<2?"🌧 ปลายฝน sad-girl szn":"🌥 ต้นหนาว healing era")+'</span></div>';
+    for(var d=0;d<7;d++){
+      var dt=new Date(start.getTime()+(w*7+d)*864e5), s=iso(dt), evs=evFor(s);
+      var cls=evs.some(function(e){return e.t==="respect"})?"respect":(evs.some(function(e){return e.t==="prep"})?"prep":"");
+      h+='<div class="cell '+cls+(s===today?' today':'')+'"><div class="dn">'+dt.getUTCDate()+' <small>'+MEN[dt.getUTCMonth()]+'</small></div>';
+      evs.forEach(function(e){h+='<span class="ev '+e.t+'">'+esc(e.th)+'<br><span style="font-weight:500">'+esc(e.en)+'</span></span>'});
+      HB.IDEAS.filter(function(i){return i.d===s}).forEach(function(i){
+        h+='<a class="post '+HB.PLAT[i.p[0]].cls+' jump" data-id="'+i.id+'" href="#idea-'+i.id+'">'+esc(i.hTH.length>36?i.hTH.slice(0,35)+"…":i.hTH)+'<br><span class="pd">'+i.p.map(function(k){return HB.PLAT[k].en}).join(" + ")+' · '+esc(i.f)+'</span></a>'});
+      if(!HB.IDEAS.some(function(i){return i.d===s})&&evs.some(function(e){return e.t==="respect"}))h+='<span class="nopost">Quiet day, no jokes · วันสงบ งดมุกนะแก</span>';
+      h+='</div>';
+    }
+  }
+  $("#calendar").innerHTML=h;
+  $("#outside").innerHTML=HB.OUTSIDE.map(function(o){return '<div>📌 '+esc(o.en)+'<br><span class="th">'+esc(o.th)+'</span></div>'}).join("");
+}
+
+/* ---------- idea board ---------- */
+var fP="all", fL="all";
+function renderFilters(){
+  var a='<button class="fb-btn'+(fP==="all"?" on":"")+'" data-p="all">All platforms · ทั้งหมด</button>';
+  Object.keys(HB.PLAT).forEach(function(k){a+='<button class="fb-btn'+(fP===k?" on":"")+'" data-p="'+k+'">'+HB.PLAT[k].en+'</button>'});
+  $("#fPlat").innerHTML=a;
+  var b='<button class="fb-btn'+(fL==="all"?" on":"")+'" data-l="all">All pillars · ทุกหมวด</button>';
+  Object.keys(HB.PILLAR).forEach(function(k){b+='<button class="fb-btn'+(fL===k?" on":"")+'" data-l="'+k+'" style="'+(fL===k?"background:"+HB.PILLAR[k].c+";border-color:"+HB.PILLAR[k].c:"")+'">'+HB.PILLAR[k].en+' · '+HB.PILLAR[k].th+'</button>'});
+  $("#fPill").innerHTML=b;
+}
+function cardHTML(i,o){o=o||{};var hl=o.gen?esc:hlq;
+  var dt=i.d?('#'+i.id+' · '+fd(i.d)):(o.saved?'Saved · เก็บแล้ว':(o.gen?'':'#'+i.id+' · Any day · ลงวันไหนก็ปัง')), act="";
+  if(o.gen) act=SAVED.some(function(x){return x.from===i.id})?'<button class="copy saved" data-unsave="'+i.id+'">✓ Saved · เก็บแล้ว</button>':'<button class="copy save" data-save="'+i.id+'">💾 Save · เก็บไว้</button>';
+  if(o.saved) act='<button class="copy del" data-del="'+i.id+'">🗑 Delete · ลบทิ้ง</button>';
+  return '<div class="card '+HB.PLAT[i.p[0]].cls+(o.gen||o.saved?' new':'')+'" id="'+(o.gen?'gen-':'idea-')+i.id+'" data-plat="'+i.p.join(",")+'" data-pill="'+i.pl+'">'+
+    (o.gen||o.saved?'<div class="newtag">'+(o.saved?'💾 SAVED · เก็บไว้แล้ว':'✨ NEW, fresh from your mood · ไอเดียใหม่จากฟีลของแก')+(i.q?' <span>“'+esc(i.q)+'”</span>':'')+'</div>':'')+
+    '<div class="row">'+platPills(i.p)+'<span class="dt">'+dt+'</span></div>'+
+    '<div class="row">'+pillTag(i.pl)+' <span class="pil" style="color:#374151">'+esc(i.f)+'</span></div>'+
+    '<div class="h">'+hl(i.hTH)+'</div><div class="he">'+hl(i.hEN)+'</div>'+
+    '<div class="cap"><div>'+hl(i.cTH)+'</div><div class="en">'+hl(i.cEN)+'</div></div>'+
+    '<div class="kv"><b>Shot idea · ถ่ายยังไง:</b> '+hl(i.shot)+'</div>'+
+    (i.tags?'<div class="tags">'+hl(i.tags)+'</div>':'')+
+    '<div class="kv"><b>Best time · ลงกี่โมงดี:</b> '+esc(i.time)+'</div>'+
+    (flagsOf(i).length?'<div>'+flagsHTML(i)+'</div>':'')+
+    '<div class="row"><button class="copy" data-copy="'+i.id+'">📋 Copy caption · ก๊อปแคปชัน</button>'+act+'</div></div>';
+}
+function renderIdeas(){
+  var base=SAVED.slice().reverse().map(function(x){return {i:x,saved:1}}).concat(HB.IDEAS.map(function(x){return {i:x}}));
+  var list=base.filter(function(o){var i=o.i;return (fP==="all"||i.p.indexOf(fP)>=0)&&(fL==="all"||i.pl===fL)});
+  if(Q.active){list.forEach(function(o){o.sc=score(o.i)});list=list.filter(function(o){return o.sc>0});list.sort(function(a,b){return b.sc-a.sc})}
+  var tot=base.length; Q.nIdeas=list.length;
+  $("#ideaCount").textContent="("+list.length+" of "+tot+" · "+list.length+"/"+tot+" ไอเดีย"+(Q.active?" · matching “"+Q.raw+"”":"")+")";
+  $("#ideaGrid").innerHTML=list.length?list.map(function(o){return cardHTML(o.i,{saved:o.saved})}).join(""):'<p class="note">Nothing matches, bestie. Hit ✨ Gimme ideas, or clear the search. · ไม่เจอเลยแก กด ✨ ขอไอเดีย หรือกดล้างดู</p>';
+}
+
+/* ---------- Day X planner ---------- */
+var DK="hb-dayx-v1";
+function dxState(){try{var o=JSON.parse(localStorage.getItem(DK)||"{}");return o&&typeof o==="object"?o:{}}catch(e){return {}}}
+function dxStore(o){try{localStorage.setItem(DK,JSON.stringify(o))}catch(e){}}
+function dxRows(){
+  var st=$("#dxStart").value||"2026-10-12",n=+$("#dxLen").value,pm=$("#dxPlat").value,s0=D(st),out=[];
+  for(var k=0;k<n;k++){var d=iso(new Date(s0.getTime()+k*864e5)),pr=HB.DAYX[k%HB.DAYX.length];
+    if(k===n-1&&n!==30)pr=HB.DAYX[29];
+    var p=pm==="alt"?(k%2?"IG":"TT"):pm,evs=evFor(d);
+    out.push({n:k+1,d:d,p:p,th:pr[0],en:pr[1],ev:evs.map(function(e){return e.th}).join(", "),calm:evs.some(function(e){return e.t==="respect"})})}
+  return out}
+function renderDayX(){
+  var S=dxState(),done=S.done||{},rows=dxRows(),nd=0;
+  S.start=$("#dxStart").value;S.len=$("#dxLen").value;S.plat=$("#dxPlat").value;dxStore(S);
+  $("#dxGrid").innerHTML=rows.map(function(r){var on=!!done[r.d+"|"+r.n];if(on)nd++;
+    return '<label class="dx '+HB.PLAT[r.p].cls+(on?' done':'')+'"><input type="checkbox" data-dx="'+r.d+'|'+r.n+'"'+(on?' checked':'')+'>'+
+      '<div><div class="dn">Day '+r.n+' <span class="dd">'+fd(r.d)+'</span></div>'+platPills([r.p==="IG"?"IG":"TT"])+(r.p==="IG"&&$("#dxPlat").value==="alt"?'<span class="dd"> Story</span>':'')+
+      '<div class="dh">Day '+r.n+' ของการมูฟออน: '+esc(r.th)+'</div><div class="de">Day '+r.n+' of moving on: '+esc(r.en)+'</div>'+
+      (r.ev?'<div class="evn">📅 '+esc(r.ev)+(r.calm?' · 🙏 keep it calm · โทนสงบ':'')+'</div>':'')+
+      '<button class="copy" data-copydx="'+(r.n-1)+'">📋 Copy</button></div></label>'}).join("");
+  var pct=rows.length?Math.round(nd/rows.length*100):0;
+  $("#dxProg").innerHTML='<b>'+nd+' / '+rows.length+' posted</b> · ลงแล้ว '+nd+' จาก '+rows.length+' วัน สู้ๆ แม่ · Day 1 = '+fd(rows[0].d)+' → Day '+rows.length+' = '+fd(rows[rows.length-1].d)+'<div class="bar"><i style="width:'+pct+'%"></i></div>';
+}
+function initDayX(){var S=dxState();if(S.start)$("#dxStart").value=S.start;if(S.len)$("#dxLen").value=S.len;if(S.plat)$("#dxPlat").value=S.plat;
+  ["dxStart","dxLen","dxPlat"].forEach(function(id){$("#"+id).addEventListener("change",renderDayX)});
+  $("#dxGrid").addEventListener("change",function(e){var k=e.target.dataset.dx;if(!k)return;var S=dxState();S.done=S.done||{};if(e.target.checked)S.done[k]=1;else delete S.done[k];dxStore(S);renderDayX()});
+  renderDayX()}
+
+/* ---------- quotes ---------- */
+function renderQuotes(){$("#quoteGrid").innerHTML=HB.QUOTES.map(function(q,n){return '<div class="qc"><span class="n">'+(n+1)+'</span><div class="t">'+esc(q[0])+'</div><div class="e">'+esc(q[1])+'</div><button class="copy" data-copyq="'+n+'">📋 Copy</button></div>'}).join("")}
+
+/* ---------- SVG charts ---------- */
+function hbars(el,items,unit){
+  var mx=Math.max.apply(null,items.map(function(i){return i.v||0}))||1,rh=34,W=520,lw=150,h=items.length*rh+6,s='<svg viewBox="0 0 '+W+' '+h+'">';
+  s+='<defs><linearGradient id="igG" x1="0" x2="1"><stop offset="0" stop-color="#f472b6"/><stop offset="1" stop-color="#be185d"/></linearGradient></defs>';
+  items.forEach(function(it,n){var y=n*rh+4,w=Math.max(2,(W-lw-70)*(it.v||0)/mx);
+    s+='<text x="'+(lw-8)+'" y="'+(y+19)+'" text-anchor="end" font-size="12.5">'+esc(it.l)+'</text>';
+    s+='<rect x="'+lw+'" y="'+(y+4)+'" width="'+w.toFixed(1)+'" height="22" rx="5" fill="'+it.c+'"'+(it.stroke?' stroke="'+it.stroke+'" stroke-width="2"':'')+'/>';
+    s+='<text x="'+(lw+w+6)+'" y="'+(y+20)+'" font-size="12.5" font-weight="700">'+(it.txt!=null?it.txt:nf(it.v))+(unit||"")+'</text>'});
+  el.innerHTML=s+'</svg>';
+}
+function lineChart(el,pts,col){
+  if(!pts.length){el.innerHTML='<p class="note">No data for this chart · ไม่มีข้อมูล</p>';return}
+  col=col||"#db2777";var W=520,H=200,L=44,B=26,T=10,mx=Math.max.apply(null,pts.map(function(p){return p.y}))||1,n=pts.length;
+  var X=function(i){return L+(W-L-12)*(n<2?.5:i/(n-1))},Y=function(v){return T+(H-T-B)*(1-v/mx)};
+  var s='<svg viewBox="0 0 '+W+' '+H+'">';
+  for(var g=0;g<=4;g++){var v=mx*g/4,y=Y(v);s+='<line x1="'+L+'" x2="'+(W-8)+'" y1="'+y+'" y2="'+y+'" stroke="#f3e8ee"/><text x="'+(L-6)+'" y="'+(y+4)+'" font-size="10" text-anchor="end" fill="#6b7280">'+nf(v)+'</text>'}
+  var d=pts.map(function(p,i){return (i?"L":"M")+X(i).toFixed(1)+" "+Y(p.y).toFixed(1)}).join(" ");
+  s+='<path d="'+d+' L'+X(n-1).toFixed(1)+' '+Y(0)+' L'+X(0).toFixed(1)+' '+Y(0)+'Z" fill="'+col+'22"/><path d="'+d+'" fill="none" stroke="'+col+'" stroke-width="2.5"/>';
+  pts.forEach(function(p,i){s+='<circle cx="'+X(i).toFixed(1)+'" cy="'+Y(p.y).toFixed(1)+'" r="3" fill="'+(p.c||col)+'"><title>'+esc(p.x)+': '+nf(p.y)+'</title></circle>'});
+  var lab=n<3?[0,n-1]:[0,Math.floor((n-1)/2),n-1];lab.forEach(function(i,q){s+='<text x="'+X(i)+'" y="'+(H-8)+'" font-size="10" text-anchor="'+(lab.length===2?["start","end"][q]:["start","middle","end"][q])+'" fill="#6b7280">'+esc(pts[i].x)+'</text>'});
+  el.innerHTML=s+'</svg>';
+}
+
+/* ---------- results tracker ---------- */
+function csvCell(v){v=String(v==null?"":v);return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v}
+function dl(name,data,type){var b=data instanceof Blob?data:new Blob([data],{type:type});var a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=name;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove()},500)}
+function b64ToBlob(b64,type){var bin=atob(b64),u=new Uint8Array(bin.length);for(var i=0;i<bin.length;i++)u[i]=bin.charCodeAt(i);return new Blob([u],{type:type})}
+function parseCSV(t){var rows=[],row=[],f="",q=false;t=t.replace(/^\uFEFF/,"");
+  for(var i=0;i<t.length;i++){var c=t[i];if(q){if(c==='"'){if(t[i+1]==='"'){f+='"';i++}else q=false}else f+=c}
+    else if(c==='"')q=true;else if(c===","){row.push(f);f=""}else if(c==="\n"||c==="\r"){if(c==="\r"&&t[i+1]==="\n")i++;row.push(f);rows.push(row);row=[];f=""}else f+=c}
+  if(f!==""||row.length){row.push(f);rows.push(row)}return rows.filter(function(r){return r.some(function(x){return String(x).trim()!==""})})}
+var ALIAS={date:/^(date|post.?date|วันที่)/i,platform:/^(platform|แพลตฟอร์ม|channel)/i,format:/^(format|รูปแบบ|type)/i,pillar:/^(pillar|หมวด|content)/i,series_day:/^(series.?day|day.?x|day$|ซีรีส์)/i,
+  views:/^(views?|plays?|ยอดวิว|วิว)/i,reach:/^(reach|คนเห็น|การเข้าถึง)/i,likes:/^(likes?|ไลก์)/i,comments:/^(comments?|คอมเมนต์)/i,shares:/^(shares?|sends?|แชร์)/i,saves:/^(saves?|favou?rites?|เซฟ|บันทึก)/i,followers_gained:/^(followers?.?gain|new.?followers?|ผู้ติดตามใหม่)/i,post_link:/^(post.?link|link|url|ลิงก์)/i,notes:/^(notes?|หมายเหตุ)/i};
+function decodeText(buf){var t=new TextDecoder("utf-8").decode(buf);if((t.match(/\uFFFD/g)||[]).length>3){try{t=new TextDecoder("windows-874").decode(buf)}catch(e){}}return t}
+function num(v){if(v===""||v==null)return null;var n=+String(v).replace(/[, ]/g,"");return isNaN(n)?null:n}
+function normDate(v){if(v==null||v==="")return "";if(typeof v==="number"&&v>20000&&v<80000){return iso(new Date(Date.UTC(1899,11,30)+v*864e5))}
+  var s=String(v).trim(),m;if(m=s.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/))return m[1]+"-"+("0"+m[2]).slice(-2)+"-"+("0"+m[3]).slice(-2);
+  if(m=s.match(/^(\d{1,2})[\/.](\d{1,2})[\/.](\d{2,4})/)){var y=+m[3];if(y<100)y+=2000;if(y>2400)y-=543;return y+"-"+("0"+m[2]).slice(-2)+"-"+("0"+m[1]).slice(-2)}return s}
+function normPlat(v){v=String(v||"");if(/tik|^tt$/i.test(v))return "TT";if(/insta|^ig$/i.test(v))return "IG";return v||"?"}
+function normPill(v){v=String(v||"");if(/heal|ฮีล/i.test(v))return "heal";if(/story|เล่า/i.test(v))return "story";if(/glow|โกลว์/i.test(v))return "glow";if(/fun|relat|ขำ/i.test(v))return "fun";if(/quote|คำคม/i.test(v))return "quote";if(/friend|commun|bestie|squad|เพื่อน/i.test(v))return "friends";return "other"}
+function gridToRows(g){
+  var hi=0,best=-1;for(var i=0;i<Math.min(g.length,10);i++){var sc=0;g[i].forEach(function(c){for(var k in ALIAS)if(ALIAS[k].test(String(c).trim()))sc++});if(sc>best){best=sc;hi=i}}
+  if(best<2)return null;var map={};g[hi].forEach(function(c,j){c=String(c).trim();for(var k in ALIAS)if(map[k]==null&&ALIAS[k].test(c)){map[k]=j;break}});
+  if(map.reach==null&&map.views==null)return null;
+  return g.slice(hi+1).map(function(r){var o={};for(var k in map)o[k]=r[map[k]];return {date:normDate(o.date),plat:normPlat(o.platform),fmt:o.format||"",pl:normPill(o.pillar),day:num(o.series_day),link:o.post_link||"",
+    notes:String(o.notes||""),views:num(o.views),reach:num(o.reach),likes:num(o.likes),comments:num(o.comments),shares:num(o.shares),saves:num(o.saves),fol:num(o.followers_gained)}}).filter(function(r){return r.reach!=null||r.views!=null||r.date})
+}
+var isExample=true;
+function renderPerf(rows,label){
+  $("#dataBadge").className="bdg "+(isExample?"ex":"real");$("#dataBadge").textContent=isExample?"EXAMPLE data · ข้อมูลตัวอย่าง (not real, no flexing)":"Your data · ยอดจริงของแก: "+label;
+  document.querySelectorAll("#perf .panel").forEach(function(p){p.classList.toggle("exm",isExample)});
+  var S=function(k){return rows.reduce(function(a,r){return a+(r[k]||0)},0)};
+  var k=[["Posts","จำนวนโพสต์",rows.length],["Views","ยอดวิว",S("views")],["Reach","คนเห็น",S("reach")],["Saves","เซฟ",S("saves")],["Shares","แชร์",S("shares")],["New followers","ผู้ติดตามใหม่",S("fol")]];
+  $("#kpis").innerHTML=k.map(function(x){return '<div class="kpi">'+(isExample?'<span class="x">EXAMPLE</span>':'')+'<div class="v">'+nf(x[2])+'</div><div class="l">'+x[0]+' · '+x[1]+'</div></div>'}).join("");
+  var pv={};rows.forEach(function(r){pv[r.plat]=(pv[r.plat]||0)+(r.views||0)});
+  hbars($("#pViews"),[{l:"Instagram",v:pv.IG||0,c:"url(#igG)"},{l:"TikTok",v:pv.TT||0,c:"#000",stroke:"#25F4EE"}]);
+  var byD={};rows.forEach(function(r){if(r.date)byD[r.date]=(byD[r.date]||0)+(r.fol||0)});var cum=0;
+  lineChart($("#pFol"),Object.keys(byD).sort().map(function(d){cum+=byD[d];var x=D(d);return {x:x.getUTCDate()+" "+MEN[x.getUTCMonth()],y:cum}}));
+  var pa={};rows.forEach(function(r){var o=pa[r.pl]=pa[r.pl]||{e:0,r:0};o.e+=(r.saves||0)+(r.shares||0);o.r+=(r.reach||0)});
+  hbars($("#pPill"),Object.keys(pa).filter(function(k){return pa[k].r>0}).map(function(k){var P=HB.PILLAR[k]||{en:"Other",c:"#9ca3af"},v=pa[k].e/pa[k].r*1000;return {l:P.en,v:v,c:P.c,txt:v.toFixed(1)}}).sort(function(a,b){return b.v-a.v}));
+  lineChart($("#pDay"),rows.filter(function(r){return r.day!=null}).sort(function(a,b){return a.day-b.day}).map(function(r){return {x:"Day "+r.day,y:r.views||r.reach||0,c:r.plat==="TT"?"#000":"#db2777"}}),"#7c3aed");
+  var top=rows.slice().sort(function(a,b){return ((b.saves||0)+(b.shares||0))-((a.saves||0)+(a.shares||0))}).slice(0,5);
+  $("#pTop").innerHTML='<table class="top5"><tr><th>Date</th><th>Platform</th><th>Format</th><th>Pillar</th><th class="n">Views</th><th class="n">Saves+Shares</th></tr>'+top.map(function(r){var P=HB.PILLAR[r.pl];
+    return '<tr><td>'+esc(r.date)+'</td><td>'+(HB.PLAT[r.plat]?'<span class="pl '+HB.PLAT[r.plat].cls+'">'+HB.PLAT[r.plat].en+'</span>':esc(r.plat))+'</td><td>'+esc(r.fmt)+'</td><td>'+(P?esc(P.en):"Other")+'</td><td class="n">'+nf(r.views)+'</td><td class="n">'+nf((r.saves||0)+(r.shares||0))+'</td></tr>'}).join("")+'</table>'+
+    (isExample?'<p class="note">EXAMPLE rows, made up for the demo. Upload yours to replace them. · แถวตัวอย่าง แต่งขึ้นมาโชว์เฉยๆ อัปโหลดของจริงมาแทนได้เลย</p>':'');
+}
+function loadExample(){isExample=true;renderPerf(gridToRows(parseCSV(window.HB_EXAMPLE_CSV)),"")}
+function loadGrid(g,name){var rows=gridToRows(g);if(!rows||!rows.length){toast("Can't find the columns (need date + views or reach). Use the template, bestie. · หาคอลัมน์ไม่เจอ ใช้ไฟล์แม่แบบนะแก",7000);return}
+  isExample=rows.every(function(r){return /EXAMPLE/i.test(r.notes)});renderPerf(rows,name);toast("Loaded "+rows.length+" posts, let's see the tea · โหลดแล้ว "+rows.length+" โพสต์",3000);$("#perf").scrollIntoView({behavior:"smooth"})}
+function loadSheetJS(cb){if(window.XLSX)return cb(null);var base=location.pathname.replace(/\/[^\/]*\.html?$/,"").replace(/\/$/,"")+"/";
+  var s=document.createElement("script");s.src=base+"vendor/xlsx.full.min.js";s.onload=function(){cb(window.XLSX?null:"Excel reader not loaded")};s.onerror=function(){cb("Excel reader could not load")};document.head.appendChild(s)}
+function onFile(file){if(!file)return;var ext=(file.name.split(".").pop()||"").toLowerCase(),rd=new FileReader();
+  rd.onload=function(){var buf=rd.result;if(ext==="csv"||ext==="txt"){loadGrid(parseCSV(decodeText(buf)),file.name);return}
+    loadSheetJS(function(err){if(err){toast(err+". Save as CSV and upload that. · บันทึกเป็น CSV แล้วอัปโหลดใหม่",8000);return}
+      try{var wb=XLSX.read(buf,{type:"array"}),sn=wb.SheetNames.filter(function(n){return !/how ?to|วิธี/i.test(n)})[0]||wb.SheetNames[0];
+        loadGrid(XLSX.utils.sheet_to_json(wb.Sheets[sn],{header:1,raw:true,defval:""}),file.name+" › "+sn)}catch(e){toast("Could not read file · อ่านไฟล์ไม่ได้: "+(e.message||e),8000)}})};
+  rd.readAsArrayBuffer(file)}
+
+/* ---------- viz sketches ---------- */
+function sketch(k){var s='<svg viewBox="0 0 260 90" preserveAspectRatio="none">',i,j,c=["#db2777","#7c3aed","#d97706","#0891b2","#059669","#be123c","#000"];
+  if(k==="heat"){for(i=0;i<7;i++)for(j=0;j<12;j++){var o=.12+.8*Math.abs(Math.sin(i*1.7+j*.9)*Math.cos(j*.4));s+='<rect x="'+(20+j*19)+'" y="'+(6+i*11.5)+'" width="17" height="10" rx="2" fill="#db2777" opacity="'+o.toFixed(2)+'"/>'}}
+  else if(k==="bars"){for(i=0;i<6;i++)s+='<rect x="'+(20+i*38)+'" y="'+(80-(20+((i*37)%55)))+'" width="26" height="'+(20+((i*37)%55))+'" rx="3" fill="'+c[i]+'"/>'}
+  else if(k==="cloud"){var w=["คิดถึง","มูฟออน","สู้ๆ","🫶","เหมือนกันเลย","ร้องไห้","โสด","กอดๆ"];w.forEach(function(t,n){s+='<text x="'+(8+(n%4)*64)+'" y="'+(30+Math.floor(n/4)*40)+'" font-size="'+[14,15,11,14,10,12,13,12][n]+'" fill="'+c[n%7]+'" font-weight="700">'+t+'</text>'})}
+  else if(k==="gal"){for(i=0;i<6;i++){s+='<rect x="'+(10+i*41)+'" y="14" width="36" height="58" rx="5" fill="'+c[i]+'" opacity=".75"/><text x="'+(28+i*41)+'" y="84" font-size="9" text-anchor="middle" fill="#6b7280">#'+(i+1)+'</text>'}}
+  else if(k==="line"){var p="";for(i=0;i<12;i++)p+=(i?"L":"M")+(14+i*21)+" "+(78-i*5-(i%3)*4);s+='<path d="'+p+'" fill="none" stroke="#7c3aed" stroke-width="2.5"/>';[0,6,11].forEach(function(n){s+='<circle cx="'+(14+n*21)+'" cy="'+(78-n*5-(n%3)*4)+'" r="4" fill="#db2777"/>'})}
+  else if(k==="ab"){["A","B","C","D"].forEach(function(t,n){var w=[180,120,150,80][n];s+='<text x="10" y="'+(20+n*19)+'" font-size="11" font-weight="700">'+t+'</text><rect x="26" y="'+(10+n*19)+'" width="'+w+'" height="13" rx="3" fill="'+(n===0?"#db2777":"#e5e7eb")+'"/>'})}
+  return s+'</svg>'}
+function renderViz(){$("#vizGrid").innerHTML=HB.VIZ.map(function(v){return '<div class="vcard">'+sketch(v.k)+'<b>'+esc(v.en)+'</b><span class="th">'+esc(v.th)+'</span></div>'}).join("")}
+function renderSrc(){$("#srcList").innerHTML=HB.SOURCES.map(function(s){return '<li>'+esc(s.t)+' — <a href="'+esc(s.u)+'" target="_blank" rel="noopener">'+esc(s.u)+'</a></li>'}).join("");$("#build").textContent=window.HB_BUILD||""}
+
+/* ---------- events ---------- */
+document.addEventListener("click",function(e){var t=e.target.closest("button,a.jump");if(!t)return;
+  if(t.dataset.p){fP=t.dataset.p;renderFilters();renderIdeas();renderStatus();return}
+  if(t.dataset.l){fL=t.dataset.l;renderFilters();renderIdeas();renderStatus();return}
+  if(t.classList.contains("jump")){e.preventDefault();var id=t.dataset.id;if(!document.getElementById("idea-"+id)){fP="all";fL="all";renderFilters();renderIdeas()}
+    if(!document.getElementById("idea-"+id)){clearQuery()}
+    var c=document.getElementById("idea-"+id);c.scrollIntoView({behavior:"smooth",block:"center"});c.classList.remove("hl");void c.offsetWidth;c.classList.add("hl");return}
+  if(t.dataset.save){saveIdea(t.dataset.save);return}
+  if(t.dataset.unsave){unsaveFrom(t.dataset.unsave);return}
+  if(t.dataset.del){delSaved(t.dataset.del);return}
+  if(t.dataset.ex){$("#q").value=t.dataset.ex;applyQuery();generate(newSeed());return}
+  if(t.id==="qGen"){generate(GEN.cards.length&&GEN.q===$("#q").value.trim()?GEN.seed:newSeed());return}
+  if(t.id==="qShuffle"){generate(newSeed());return}
+  if(t.id==="qClear"){clearQuery();$("#q").focus();return}
+  if(t.id==="savedCsv"){exportSaved();return}
+  if(t.dataset.copy){var i=findIdea(t.dataset.copy);copyText(i.hTH+"\n"+i.cTH+"\n\n"+i.hEN+"\n"+i.cEN+(i.tags?"\n\n"+i.tags:""));return}
+  if(t.dataset.copyeasy){var x=HB.EASY[+t.dataset.copyeasy];copyText(x.hTH+"\n"+x.hEN);return}
+  if(t.dataset.copyq){var qq=HB.QUOTES[+t.dataset.copyq];copyText(qq[0]+"\n"+qq[1]);return}
+  if(t.dataset.copydx){e.preventDefault();var r=dxRows()[+t.dataset.copydx];copyText("Day "+r.n+" ของการมูฟออน: "+r.th+"\nDay "+r.n+" of moving on: "+r.en+"\n#มูฟออน #Day"+r.n+" #movingon");return}
+  if(t.id==="dxCsv"){var S=dxState(),dn=S.done||{};var out=[["day","date","platform","hook_th","hook_en","event","posted"]].concat(dxRows().map(function(r){return [r.n,r.d,HB.PLAT[r.p].en,"Day "+r.n+" ของการมูฟออน: "+r.th,"Day "+r.n+" of moving on: "+r.en,r.ev,dn[r.d+"|"+r.n]?"yes":""]}));
+    dl("day_x_moving_on_plan.csv","\uFEFF"+out.map(function(r){return r.map(csvCell).join(",")}).join("\n"),"text/csv");return}
+  if(t.id==="dxReset"){if(confirm("Clear all ticks? · ล้างติ๊กทั้งหมดเลยนะ?")){var S2=dxState();S2.done={};dxStore(S2);renderDayX()}return}
+  if(t.id==="dlTplX"){dl("hb_posts_template.xlsx",b64ToBlob(window.HB_TPL_XLSX_B64,"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"));return}
+  if(t.id==="dlTplC"){dl("hb_posts_template.csv","\uFEFF"+window.HB_TPL_CSV.replace(/^\uFEFF/,""),"text/csv");return}
+  if(t.id==="resetEx"){loadExample();toast("Showing EXAMPLE data · กลับไปดูตัวอย่าง");return}
+});
+$("#file").addEventListener("change",function(e){onFile(e.target.files[0]);e.target.value=""});
+var dr=$("#drop");["dragover","dragenter"].forEach(function(n){dr.addEventListener(n,function(e){e.preventDefault();dr.classList.add("over")})});
+["dragleave","drop"].forEach(function(n){dr.addEventListener(n,function(e){e.preventDefault();dr.classList.remove("over")})});
+dr.addEventListener("drop",function(e){onFile(e.dataTransfer.files[0])});
+
+/* ---------- mood / theme box: offline filter + idea generator (no external AI) ---------- */
+var G=HB.GEN, QK="hb-q-v1", SK="hb-saved-v1";
+var Q={raw:"",active:false,concepts:[],P:null,nIdeas:0,nCal:0}, GEN={seed:0,cards:[],q:""}, SAVED=loadSaved();
+function loadSaved(){try{var a=JSON.parse(localStorage.getItem(SK)||"[]");return Array.isArray(a)?a:[]}catch(e){return []}}
+function storeSaved(){try{localStorage.setItem(SK,JSON.stringify(SAVED))}catch(e){toast("Couldn't save (browser storage blocked) · เก็บไม่ได้ เบราว์เซอร์บล็อก",5000)}}
+function storeQ(){try{localStorage.setItem(QK,JSON.stringify({q:$("#q").value,gq:GEN.cards.length?GEN.q:"",seed:GEN.seed}))}catch(e){}}
+function rxEsc(x){return x.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}
+function isLatin(x){return /^[a-z0-9 .%\-é]+$/i.test(x)}
+var TERMS=[];G.CONCEPTS.forEach(function(g){g.terms.forEach(function(t){TERMS.push({t:t.toLowerCase(),g:g})})});TERMS.sort(function(a,b){return b.t.length-a.t.length});
+var CRISIS=G.CRISIS.map(function(h){return h.toLowerCase()}).sort(function(a,b){return b.length-a.length});
+var STOP=/^(the|and|for|to|of|a|an|with|in|on|at|my|me|i|idea|ideas|post|posts|content|mood|theme|ของ|และ|กับ|ที่|ใน|ไอเดีย|โพสต์|อารมณ์|ธีม|ช่วง|วัน)$/i;
+function latinRx(t,raw,gl){return new RegExp("(^|[^a-z0-9])("+rxEsc(t)+")"+(raw?"":"(?=(?:e?s)?(?:$|[^a-z0-9]))"),gl?"gi":"i")}
+function found(s,t){return isLatin(t)?latinRx(t).test(s):s.indexOf(t)>=0}
+function consume(s,t){return isLatin(t)?s.replace(latinRx(t,0,1),"$1 "):s.split(t).join(" ")}
+function parseQuery(q){
+  var s=" "+q.toLowerCase().replace(/[,;\/+|"“”!?]+/g," ")+" ",groups=[],crisis=false;
+  CRISIS.forEach(function(h){if(found(s,h)){crisis=true;s=consume(s,h)}});
+  TERMS.forEach(function(x){if(found(s,x.t)){var ex=false;(x.g.excl||[]).forEach(function(e){if(s.indexOf(e)>=0&&e.indexOf(x.t)>=0)ex=true});if(ex)return;if(groups.indexOf(x.g)<0)groups.push(x.g);s=consume(s,x.t)}});
+  var raws=s.split(/\s+/).filter(function(w){return w.length>=2&&!STOP.test(w)});
+  return {raw:q.trim(),groups:groups,raws:raws,crisis:crisis};
+}
+function conceptsOf(P){
+  var cs=P.groups.map(function(g){return {label:g.en+" · "+g.th,terms:g.terms.map(function(x){return x.toLowerCase()}),excl:g.excl||[]}});
+  P.raws.forEach(function(r){cs.push({label:r,terms:[r],excl:[],raw:1})});
+  if(P.crisis)cs.push({label:"🤍 care · ดูแลใจ",terms:["ฮีลใจ","healing","เพื่อน","friend"],excl:[],care:1});
+  cs.forEach(function(c){c.rx=c.terms.map(function(t){return isLatin(t)?latinRx(t,c.raw):null})});
+  return cs;
+}
+function hay(i){var P=HB.PILLAR[i.pl]||{};return [i.hTH,i.hEN,i.cTH,i.cEN,i.f,i.tags,i.shot,i.k||"",P.en,P.th].join(" ").toLowerCase()}
+function hitC(h,c){var x=h;c.excl.forEach(function(e){x=x.split(e).join(" ")});return c.terms.some(function(t,j){return c.rx[j]?c.rx[j].test(x):x.indexOf(t)>=0})}
+function score(i){var h=hay(i);return Q.concepts.reduce(function(a,c){return a+(hitC(h,c)?1:0)},0)}
+function hlq(text){text=String(text==null?"":text);if(!Q.active)return esc(text);
+  var low=text.toLowerCase(),L=text.length,on=[],k,i,out="",m;if(low.length!==L)return esc(text);
+  Q.concepts.forEach(function(c){var bl=[];if(c.care)return;
+    c.excl.forEach(function(e){k=low.indexOf(e);while(k>=0){for(i=k;i<k+e.length;i++)bl[i]=1;k=low.indexOf(e,k+1)}});
+    c.terms.forEach(function(t,j){if(t.length<2)return;
+      if(c.rx[j]){var re=new RegExp(c.rx[j].source,"gi");while((m=re.exec(low))){var s=m.index+m[1].length;if(!bl[s])for(i=s;i<s+t.length;i++)on[i]=1;re.lastIndex=s+1}}
+      else{k=low.indexOf(t);while(k>=0){if(!bl[k])for(i=k;i<k+t.length;i++)on[i]=1;k=low.indexOf(t,k+1)}}})});
+  for(i=0;i<L;){var st=on[i];for(k=i;k<L&&!!on[k]===!!st;k++);out+=st?'<mark>'+esc(text.slice(i,k))+'</mark>':esc(text.slice(i,k));i=k}
+  return out}
+function applyQuery(){
+  var q=$("#q").value; Q.raw=q.trim(); Q.P=parseQuery(q); Q.concepts=conceptsOf(Q.P); Q.active=Q.raw.length>0&&Q.concepts.length>0;
+  renderIdeas(); renderGen(); markCal(); renderStatus(); storeQ();
+}
+function markCal(){var nc=0;
+  document.querySelectorAll(".calendar .post").forEach(function(el){var i=findIdea(el.dataset.id);if(!i)return;var m=Q.active&&score(i)>0;
+    el.classList.toggle("match",m);el.classList.toggle("dim",Q.active&&!m);if(m)nc++});Q.nCal=nc}
+function careBox(){return '<div class="carebox">🤍 <b>Hey, if it feels like too much, please talk to someone now.</b> Thailand mental-health hotline <b>1323</b> (free, 24 h), or call your bestie. No content is worth more than you; you don\'t have to post tonight. The ideas below are the soft ones.<br><span>แก ถ้าไม่ไหว คุยกับใครสักคนตอนนี้เลยนะ โทร <b>1323</b> สายด่วนสุขภาพจิต ฟรี 24 ชม. หรือโทรหาเพื่อนซี้ ไม่มีคอนเทนต์ไหนสำคัญกว่าแก คืนนี้ไม่ต้องโพสต์ก็ได้ ไอเดียด้านล่างเป็นแบบอ่อนโยน</span></div>'}
+function renderStatus(){
+  var st=$("#qStatus"),no=$("#qNotice");
+  if(!Q.raw){st.innerHTML='<span class="note">Type your mood rn to filter the board, or smash ✨ for fresh idea cards. · พิมพ์ฟีลตอนนี้เพื่อกรอง หรือกด ✨ รับไอเดียใหม่</span>';no.innerHTML="";return}
+  var filt=(fP!=="all"||fL!=="all")?' <span class="note">(with your platform/pillar filter · รวมตัวกรองที่เลือกด้วย)</span>':'';
+  st.innerHTML='🔎 <b>'+Q.nIdeas+' ideas match</b> · ตรงกับ '+Q.nIdeas+' ไอเดีย · '+Q.nCal+' calendar posts · ปฏิทิน '+Q.nCal+filt+
+    '<div class="und">The vibe I\'m getting · เข้าใจว่า: '+(Q.concepts.length?Q.concepts.map(function(c){return '<span class="chip'+(c.raw?' raw':'')+'">'+esc(c.label)+'</span>'}).join(""):'<span class="note">no clue yet · ยังงงอยู่</span>')+'</div>';
+  no.innerHTML=Q.P.crisis?careBox():"";
+}
+function clearQuery(){$("#q").value="";GEN.cards=[];GEN.q="";applyQuery()}
+/* ---- generator ---- */
+function rng(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function shuf(r,a){for(var i=a.length-1;i>0;i--){var j=Math.floor(r()*(i+1)),t=a[i];a[i]=a[j];a[j]=t}return a}
+function newSeed(){return (Math.random()*1e9|0)+1}
+function fill(str,c,x){return str.replace(/\{(c|C|e|s|S|n|q|Q)\}/g,function(_,k){return ({c:c.th,C:c.en,e:c.e,s:c.s,S:c.S,n:x.n,q:x.q[0],Q:x.q[1]})[k]})}
+function makeIdeas(P,seed){
+  var r=rng(seed),ctxs=P.groups.slice();
+  if(P.crisis)ctxs=[G.CARE];
+  else if(!ctxs.length){if(!P.raws.length)return [];var w=P.raws.join(" ");ctxs=[{id:"raw",th:"ธีม '"+w+"'",en:"'"+w+"'",e:"✨",s:"มุมที่เข้ากับธีม "+w,S:"a spot that fits '"+w+"'",tag:"#"+P.raws.join("").replace(/[^\p{L}\p{N}]/gu,"")+" #อกหัก"}]}
+  var T=G.TEMPLATES.filter(function(t){return !P.crisis||t.pl==="heal"||t.pl==="quote"||t.pl==="friends"});
+  var respect=ctxs.some(function(c){return c.flag==="respect"});
+  if(respect)T=T.filter(function(t){return t.pl!=="fun"&&t.pl!=="glow"});
+  var tt=shuf(r,T.filter(function(t){return t.p==="TT"})),ig=shuf(r,T.filter(function(t){return t.p==="IG"}));
+  var n=3+Math.floor(r()*4),chosen=[];for(var k=0;chosen.length<n;k++){var src=k%2?ig:tt;if(!src.length)src=k%2?tt:ig;chosen.push(src[Math.floor(k/2)%src.length])}
+  var offc=Math.floor(r()*ctxs.length),qs=shuf(r,HB.QUOTES.slice());
+  return chosen.map(function(t,j){var c=ctxs[(j+offc)%ctxs.length],x={n:1+Math.floor(r()*30),q:qs[j%qs.length]};
+    var fl=[];if(c.flag)fl.push(c.flag);if(P.crisis)fl.push("care");
+    var tags=(c.tag+" "+(t.p==="TT"?"#fyp #มูฟออน":"#ฮีลใจ #คำคม")).split(" ").filter(function(z,i,a){return z&&a.indexOf(z)===i}).slice(0,5).join(" ");
+    return {id:"g"+seed+"-"+j,p:[t.p],f:t.f,pl:t.pl,hTH:fill(t.hTH,c,x),hEN:fill(t.hEN,c,x),cTH:fill(t.cTH,c,x),cEN:fill(t.cEN,c,x),
+      shot:fill(t.shot,c,x)+(respect?" · Calm tone: no jokes at the temple. · โทนสงบ ไม่เล่นมุกในวัดนะแก":""),tags:tags,flags:fl,
+      time:t.p==="TT"?"21:00–23:00 · 3–5 ทุ่ม":"19:30–21:00 · 1 ทุ่มครึ่ง–3 ทุ่ม",q:P.crisis?"":P.raw}});
+}
+function generate(seed){
+  if(!$("#q").value.trim()){toast("Type a mood first, bestie · พิมพ์ฟีลก่อนนะแก");$("#q").focus();return}
+  applyQuery(); GEN.seed=seed; GEN.q=$("#q").value.trim(); GEN.cards=makeIdeas(Q.P,seed);
+  if(!GEN.cards.length)toast("Try other words, e.g. คิดถึง, ฝน, cafe · ลองคำอื่นดิ",4000);
+  renderGen(); storeQ();
+}
+function renderGen(){
+  var g=$("#genGrid");
+  if(!GEN.cards.length){g.innerHTML="";$("#genHead").style.display="none";$("#qShuffle").disabled=true;return}
+  $("#genHead").style.display="";$("#qShuffle").disabled=false;
+  $("#genHead").innerHTML='✨ <b>'+GEN.cards.length+' fresh ideas for “'+esc(GEN.q)+'”</b> · ไอเดียใหม่ปังๆ '+GEN.cards.length+' ข้อ <span class="note">Made from built-in templates on this device (no AI service). Make it yours before posting. · สร้างจากแม่แบบในเครื่อง ปรับให้เป็นสไตล์แกก่อนลงนะ</span>';
+  g.innerHTML=GEN.cards.map(function(i){return cardHTML(i,{gen:1})}).join("");
+}
+function findIdea(id){var a=HB.IDEAS.concat(SAVED,GEN.cards);for(var k=0;k<a.length;k++)if(String(a[k].id)===String(id))return a[k];return null}
+function saveIdea(gid){var c=GEN.cards.filter(function(x){return x.id===gid})[0];if(!c||SAVED.some(function(x){return x.from===gid}))return;
+  var s=JSON.parse(JSON.stringify(c));s.from=gid;s.id="s"+Date.now().toString(36)+Math.floor(Math.random()*1e4);s.savedAt=new Date().toISOString();
+  SAVED.push(s);storeSaved();renderGen();renderIdeas();renderStatus();renderSavedBar();toast("Saved to the board, slay · เก็บลงคลังแล้ว")}
+function unsaveFrom(gid){SAVED=SAVED.filter(function(x){return x.from!==gid});storeSaved();renderGen();renderIdeas();renderStatus();renderSavedBar();toast("Removed · เอาออกแล้วจ้า")}
+function delSaved(id){if(!confirm("Delete this saved idea? · ลบจริงดิ?"))return;SAVED=SAVED.filter(function(x){return x.id!==id});storeSaved();renderGen();renderIdeas();renderStatus();renderSavedBar();toast("Deleted · ลบแล้ว บ๊ายบาย")}
+function renderSavedBar(){var n=SAVED.length;
+  $("#savedBar").innerHTML=n?'💾 <b>'+n+' saved</b> · เก็บแล้ว '+n+' ไอเดีย (in this browser · ในเบราว์เซอร์นี้) <button id="savedCsv" class="ghost">⬇ Export saved CSV</button>':'<span class="note">Saved ideas pop up at the top of the board below. · ไอเดียที่เก็บไว้จะโผล่บนสุดของคลังด้านล่าง</span>'}
+function exportSaved(){if(!SAVED.length){toast("Nothing saved yet · ยังไม่ได้เก็บอะไรเลยแก");return}
+  var cols=["saved_at","from_mood","platform","format","pillar","hook_th","hook_en","caption_th","caption_en","shot_idea","hashtags","best_time","flags"];
+  var rows=[cols].concat(SAVED.map(function(i){return [i.savedAt,i.q,i.p.map(function(k){return HB.PLAT[k].en}).join(" + "),i.f,HB.PILLAR[i.pl].en,i.hTH,i.hEN,i.cTH,i.cEN,i.shot,i.tags,i.time,
+    flagsOf(i).map(function(f){return {respect:"Calm tone",privacy:"Blur names/faces",care:"Gentle tone"}[f]}).join("; ")]}));
+  dl("heartbreak_saved_ideas.csv","\uFEFF"+rows.map(function(r){return r.map(csvCell).join(",")}).join("\n"),"text/csv")}
+function initAsk(){
+  $("#qChips").innerHTML='<span class="note">Try · ลองพิมพ์:</span> '+["คิดถึง ฝน","ฮาโลวีน","ลอยกระทง","cafe alone","แฟนเก่าทักมา","glow up","ออกพรรษา","โสด","delulu"].map(function(x){return '<button class="exchip" data-ex="'+esc(x)+'">'+esc(x)+'</button>'}).join("");
+  var tmr;$("#q").addEventListener("input",function(){clearTimeout(tmr);tmr=setTimeout(applyQuery,200)});
+  $("#q").addEventListener("keydown",function(e){if(e.key==="Enter"&&!e.isComposing){e.preventDefault();generate(GEN.cards.length&&GEN.q===$("#q").value.trim()?GEN.seed:newSeed())}});
+  var st={};try{st=JSON.parse(localStorage.getItem(QK)||"{}")}catch(e){}
+  if(st.gq&&st.seed){GEN.seed=st.seed;GEN.q=st.gq;GEN.cards=makeIdeas(parseQuery(st.gq),st.seed)}
+  if(st.q)$("#q").value=st.q;
+  applyQuery();renderSavedBar();
+}
+
+renderEasy();renderCal();renderFilters();renderIdeas();initDayX();renderQuotes();loadExample();renderViz();renderSrc();initAsk();
+})();
+</script>
+</body>
+</html>
